@@ -1,0 +1,84 @@
+HTML (Hypertext Markup Language)
+        <tagName>content</tagName>
+        1-its adviced to make the tags with small font
+        2-Pay attention to the closing order of tags.
+        3-the main tag should contain all the other tags <html>
+        4-and before it we put tag for what verion we are using DOCTYPE <!DOCTYPE html>
+ 
+<head>  
+        The head element is a container for metadata (data about data) and is placed between the html tag and the body tag
+        HTML metadata is data about the HTML document. Metadata is not displayed.
+        Metadata typically define the document title, character set, styles, scripts, and other meta information.
+<title>
+        The title element defines the title of the document. The title must be text-only, and it is shown in the browser
+            title bar or in the page's tab
+            The title element is required in HTML documents!
+            The content of a page title is very important for search engine optimization (SEO)! The page title
+            is used by search engine algorithms to decide the order when listing pages in search results.
+
+            The title element:
+                defines a title in the browser toolbar
+                provides a title for the page when it is added to favorites
+                displays a title for the page in search engine-results
+<body>
+        The body tag defines the document's body
+        The body element contains all the contents of an HTML document, such as headings,
+        paragraphs, images, hyperlinks, tables, lists, etc.
+        Note: There can only be one body element in an HTML document
+<p>     tag defines a paragraph
+<b>     this is bold text</b>
+<u>     this is underLined text</u>
+<i>     this is italic text</i>
+<s>     this is strike text</s>
+<sub>   this is subscript text</sub>
+<sup>   this is superscript text</sup>
+<small> this is small text</small>
+<big>   this is big text</big>
+<h1>    this is heading start form <h1>big untill <h6>small
+Single elements
+        its an element one tag not end like <hr> 
+<br>    (Single elements) go to the next line 
+<hr>    (Single elements) make a horizontal line
+<span> 
+        The <span> tag is an inline container used to mark up a part of a text, or a part of a document
+        The <span> tag is easily styled by CSS or manipulated with JavaScript using the class or id attribute
+        The <span> tag is much like the <div> element, but <div> is a block-level element and <span> is an inline element
+<div>
+        The <div> tag defines a division or a section in an HTML document.
+        The <div> tag is used as a container for HTML elements - which is then styled with CSS or manipulated with JavaScript.
+        The <div> tag is easily styled by using the class or id attribute.
+        Any sort of content can be put inside the <div> tag! 
+        Note: By default, browsers always place a line break before and after the <div> element.
+<blockquote>    for quote
+<q>     for ""
+<kbd>   for keyboard 
+<strong>for importen text
+<mark>  for high light
+<abbr title="like this">        for shory cut
+<em>    focus text
+images
+<images>    <img src="" alt=""> 
+        The <img> tag is used to embed an image in an HTML page.
+        Images are not technically inserted into a web page; images are linked to web pages. The <img> tag creates a holding space for the referenced image.
+        The <img> tag has two required attributes:
+        src - Specifies the path to the image
+        alt - Specifies an alternate text for the image, if the image for some reason cannot be displayed
+        Note: Also, always specify the width and height of an image. If width and height are not specified, the page might flicker while the image loads.
+<ol>    
+        for order list can also do <ol start="2"> to start from the secend line
+        and for every item we use <li> and the item end with </li> <li>to start the secend item.etc</li>
+<ul>    unorder list can  use type for type <ul type = "none">
+<dl>    The <dl> tag defines a description list.
+        The <dl> tag is used in conjunction with <dt> (defines terms/names) and <dd> (describes each term/name).
+        <dl>
+        <dt>spiders</dt>
+        <dd>scary poion</dd>
+        <dt>orange</dt>
+        <dd>frute </dd></dl>
+<table> The <table> tag defines an HTML table.
+        An HTML table consists of one <table> element and one or more <tr>, <th>, and <td> elements.
+        we can use <table border="1"> for border
+<tr>    element defines a table row
+<th>    element defines a table header
+<td>    element defines a table cell.
+
