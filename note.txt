@@ -81,4 +81,71 @@ images
 <tr>    element defines a table row
 <th>    element defines a table header
 <td>    element defines a table cell.
+<a>     for link <a href="https://github.com/WissamMU">my github</a>
+<form>  
+        The <form> tag is used to create an HTML form for user input.
+        The <form> element can contain one or more of the following form elements:
+        https://www.w3schools.com/tags/tag_form.asp
+<input>
+        The <input> tag specifies an input field where the user can enter data.
+        The <input> element is the most important form element.
+        The <input> element can be displayed in several ways, depending on the type attribute.
+        <input type="button">
+<button>
+        The <button> tag defines a clickable button.
+        Inside a <button> element you can put text (and tags like <i>, <b>, <strong>, <br>, <img>, etc.).
+        That is not possible with a button created with the <input> element!
+        Tip: Always specify the type attribute for a <button> element, to tell browsers what type of button it is.
+        <button>hello</button>
+<label> The <label> tag defines a label for several elements:
+        <input type="color"> ,<input type="email"> , <input type="number"> ,<input type="password"> (https://www.w3schools.com/tags/tag_label.asp)
+<audio> The <audio> tag is used to embed sound content in a document, such as music or other audio streams.
+        The <audio> tag contains one or more <source> tags with different audio sources. The browser will choose the first source it supports.
+        The text between the <audio> and </audio> tags will only be displayed in browsers that do not support the <audio> element.
+        There are three supported audio formats in HTML: MP3, WAV, and OGG.
+        <audio controls>
+        <source src="horse.ogg" type="audio/ogg">
+        <source src="horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+        </audio>
+<vidio> The <video> tag is used to embed video content in a document, such as a movie clip or other video streams.
+        The <video> tag contains one or more <source> tags with different video sources. The browser will choose the first source it supports.
+        The text between the <video> and </video> tags will only be displayed in browsers that do not support the <video> element.
+        There are three supported video formats in HTML: MP4, WebM, and OGG 
+        <video width="320" height="240" controls>
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+        </video>
+<header>
+        The <header> element represents a container for introductory content or a set of navigational links.
+        A <header> element typically contains:
+        one or more heading elements (<h1> - <h6>)
+        logo or icon
+        authorship information
+        Note: You can have several <header> elements in one HTML document. However, <header> cannot be
+        placed within a <footer>, <address> or another <header> element
+<nav>   The <nav> tag defines a set of navigation links.
+        Notice that NOT all links of a document should be inside a <nav> element. The <nav> element is intended only for major blocks of navigation links.
+        Browsers, such as screen readers for disabled users, can use this element to determine whether to omit the initial rendering of this content.
+<article>
+        The <article> tag specifies independent, self-contained content.
+        An article should make sense on its own and it should be possible to distribute it independently from the rest of the site.
+        Potential sources for the <article> element:
+        Forum post, Blog post, News story
+        Note: The <article> element does not render as anything special in a browser. However, you can use CSS to style the <article> element.
+<section>
+        The <section> tag defines a section in a document.
+<asid>  The <aside> tag defines some content aside from the content it is placed in.
+        The aside content should be indirectly related to the surrounding content.
+        Tip: The <aside> content is often placed as a sidebar in a document.
+        Note: The <aside> element does not render as anything special in a browser. However, you can use CSS to style the <aside> element (see example below).
+<footer>
+        The <footer> tag defines a footer for a document or section.
+        A <footer> element typically contains:
+        authorship information, copyright information, contact information, sitemap, back to top links, related documents
+        You can have several <footer> elements in one document.
+
+
+
 
