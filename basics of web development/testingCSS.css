@@ -1,0 +1,28 @@
+#tableForLogin{
+    color: rgb(255, 188, 42);
+}
+h1.hiSpider{
+    color: crimson;
+    text-decoration: underline;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 5px 3px 2px gray;
+    text-indent: 3cm;
+}
+div > h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-style: italic;
+}
+input[type="password"]{
+    background-color: aqua;
+}
+body{
+    background-image: url(https://cdn.pixabay.com/photo/2019/08/01/12/36/illustration-4377408_640.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }

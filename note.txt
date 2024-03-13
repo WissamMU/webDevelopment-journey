@@ -145,7 +145,28 @@ images
         A <footer> element typically contains:
         authorship information, copyright information, contact information, sitemap, back to top links, related documents
         You can have several <footer> elements in one document.
+<link>  The <link> tag defines the relationship between the current document and an external resource.
+        The <link> tag is most often used to link to external style sheets or to add a favicon to your website.
+        The <link> element is an empty element, it contains attributes only.
+        <link rel="stylesheet" href="fileName.css">
 
+===============================================================================================================================================================
 
+CSS (Cascading Style Sheets)
 
-
+how to change styles
+        namelike table{
+        color: rgb(255, 174, 0);
+        background-color: crimson;
+        }
+or give it a calss name <table border="3" class="tableForLogin"> and then (.)before the name
+        .tableForLogin{
+        color: rgb(255, 174, 0);
+        background-color: crimson;
+        }
+or we can use id <table border="3" id="tableForLogin"> and then (#)before the name (use id if one item)
+        #tableForLogin{
+        color: rgb(255, 174, 0);
+        background-color: crimson;
+        }
+and we can by more specified by using tag and id or class like <h1 id="hiSpider"> spider hi </h1>
