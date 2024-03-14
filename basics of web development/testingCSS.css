@@ -9,20 +9,83 @@ h1.hiSpider{
     text-shadow: 5px 3px 2px gray;
     text-indent: 3cm;
 }
-div > h1{
+div#backGround > h1{
     font-family: 'Courier New', Courier, monospace;
     font-size: large;
     font-weight: bold;
     font-variant: small-caps;
     font-style: italic;
-}
-input[type="password"]{
-    background-color: aqua;
+    color: red;
 }
 body{
-    background-image: url(https://cdn.pixabay.com/photo/2019/08/01/12/36/illustration-4377408_640.png);
+    background-color: antiquewhite;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
+a:link{color: red;}
+a:visited{color: purple;}
+a:hover{color: blue;}
+a:active{color: orange;}
+div > h1.content{
+    border: 20px;
+    color:crimson;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+    font-size: 50px;
+}
+ol.books{
+    list-style-type: lower-greek;
+}
+table.test td , th{
+    border: 2px solid black;
+    padding: 15px;
+    font-size: 20px;
+    font: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+table.test {
+    border-collapse: collapse;
+}
+form#logIn{
+    background-color: white;
+    padding: 1em;
+    width: 20em ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 40px;
+    border: 3px solid silver;
+    border-radius: 10px;
+    border-top: 5px ;
+    border-left: 5px;
+}
+form#logIn > h6{
+    margin: 3px;
+}
+form#logIn > input[type="text"] ,form#logIn >  input[type="password"]{
+    border:3px solid silver;
+    border-radius: 50px;
+    height: 20px;
+    width: 90%;
+    border-top: 1px solid rgba(192, 192, 192, 0.658);
+    border-left: 5px;
+    background-color:rgba(192, 192, 192, 0.349);
+}
+form#logIn > input[type="submit"] {
+    width: 50%;
+    height: 25px;
+    margin-top: 30px;
+    background-color: rgba(255, 68, 0, 0.801);
+    box-shadow: 2px 2px 20px 2px silver;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    border-radius: 10px;
+
+}
