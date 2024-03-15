@@ -82,6 +82,8 @@ images
 <th>    element defines a table header
 <td>    element defines a table cell.
 <a>     for link <a href="https://github.com/WissamMU">my github</a>
+<i>     for icons <i class="fa fa-car"></i>
+
 <form>  
         The <form> tag is used to create an HTML form for user input.
         The <form> element can contain one or more of the following form elements:
@@ -159,14 +161,116 @@ how to change styles
         color: rgb(255, 174, 0);
         background-color: crimson;
         }
-or give it a calss name <table border="3" class="tableForLogin"> and then (.)before the name
+
+css selectors
+1- calss name <table border="3" class="tableForLogin"> and then (.)before the name
         .tableForLogin{
         color: rgb(255, 174, 0);
         background-color: crimson;
         }
-or we can use id <table border="3" id="tableForLogin"> and then (#)before the name (use id if one item)
+2- id <table border="3" id="tableForLogin"> and then (#)before the name (use id if one item)
         #tableForLogin{
         color: rgb(255, 174, 0);
         background-color: crimson;
         }
-and we can by more specified by using tag and id or class like <h1 id="hiSpider"> spider hi </h1>
+3- tag and id or class like <h1 id="hiSpider"> spider hi </h1>
+        h1#hiSpider{
+        color: rgba(255, 0, 119, 0.945);
+        size: 55px;
+        }
+4- tag with tag like h1 in div <div><h1>h1 in div</h1></div>
+        div > h1{
+        color: crimson;
+        }
+5- tag that have specifie itme like <input type="password" id="psw" name="psw">
+        input[type="password"]{
+        background-color: aqua;
+        }
+
+fonts
+                div > h1{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: large;
+        font-weight: bold;
+        font-variant: small-caps;
+        font-style: italic;
+        }
+text
+        h1.hiSpider{
+        color: crimson;
+        text-decoration: underline;
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: 5px 3px 2px gray;
+        text-indent: 3cm;
+        }
+
+link in css (in order)
+1- normal stat          a:link{color: red;}
+2- visited stat         a:visited{color: purple;}
+3- hover stat           a:hover{color: blue;}
+4- active stat          a:active{color: orange;} 
+
+every item in css count as box and The following consists
+1- content      what is inside the box
+2- border       the borders of the itmes
+3- padding      the empty space between the item inside the box and the border
+4- margin       the empyy space between the border and the rest of the items outside the box
+                we can us it for put space between different items
+to chaing list type style 
+        ol.books{
+                list-style-type: lower-greek;
+        }
+or chaing it to image
+        ol.books{
+        list-style-image: url(img.jpg);
+        }
+table in css
+        table.test td , th{
+        border: 2px solid black;
+        padding: 15px;
+        font-size: 20px;
+        font: bold;
+        font-family: 'Courier New', Courier, monospace;
+        }
+        table.test {
+        border-collapse: collapse;
+        }
+
+position
+        1- relative : relative with the rest of the object
+        2- absolute : loction absolute for the page
+        3- fixed    : fixed on the screen evern if scroll it will stay same place
+
+flex box
+        used for spaces in different screen size
+        it need container for the items 
+        display: flex;                  now the items get smaller with smaler screen 
+        flex-wrap: wrap;                if there is no space for the item go to next row
+        flex-direction: column;         items put in column (row by default)
+        justify-content: space-around;  space between items 
+        align-items: center;            space in axes
+        align-content: center;          align between wrap
+        gap: 3em;                       space between items
+        flex-grow:                      make the item grow if there is space left
+        flex-shrink                     how flexable item is and what item shrink first 
+        flex-basis                      item size over wright
+        flex                            the 3 upove in one command
+        order:                          order items 
+
+display : 
+        1- Black (by default) order column 
+        2- inline item order in row 
+        3- inline-block the items stay in row and if no space go next column
+        4- none it well not show at all
+
+float : left or right
+        item well if flow in place and the rest of the items will take place around it
+<div style = "clear: both">     if we wont item to not get effected with float
+
+fonts
+        to add font this is how 
+        @font-face {
+         font-family: name;
+         src: url(loction);
+        }

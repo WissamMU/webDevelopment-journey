@@ -3,51 +3,73 @@
     <head>
 
         <link rel="stylesheet" href="testingCSS.css">
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     </head>
     <body>
-        <form id="logIn">
-            <h1>Log In</h1>
-            <label for="userName">User Name</label>
-            <input type="text" id="userName" name="userName"><br>
-            <label for="pwd">Password</label>
-            <input type="password" name="pwd" id="pwd"><br>
-            <input type="submit">
-            <h6>forget password?</h6>
-        </form>
+        <div class="flexTest">
+            <form id="logIn">
+                <h1>Log In <i class="fa fa-code"></i></h1>
+                <label for="userName">User Name</label>
+                <input type="text" id="userName" name="userName"><br>
+                <label for="pwd">Password</label>
+                <input type="password" name="pwd" id="pwd"><br>
+                <input type="submit">
+            </form>
+            <form id="logIn">
+                <h1>Log In</h1>
+                <label for="userName">User Name</label>
+                <input type="text" id="userName" name="userName"><br>
+                <label for="pwd">Password</label>
+                <input type="password" name="pwd" id="pwd"><br>
+                <input type="submit">
+            </form>
+            <form id="logIn">
+                <h1>Log In</h1>
+                <label for="userName">User Name</label>
+                <input type="text" id="userName" name="userName"><br>
+                <label for="pwd">Password</label>
+                <input type="password" name="pwd" id="pwd"><br>
+                <input type="submit">
+            </form>
+        </div>
 
+
+
+        <!--
         <form>
-            <table border="2" id="tableForLogin">
+            <table class="tableForLogin">
                 <thead>
                     <tr>
-                        <td><label for="userName">User Name : </label></td>
+                        <th><label for="userName">User Name : </label></th>
                         <td><input type="text" id="userName" name="userName"><br></td>
                     </tr>
                     <tr>
-                        <td><label for="psw">Password</label></td>
+                        <th><label for="psw">Password</label></th>
                         <td><input type="password" id="psw" name="psw"></td>
                     </tr>
                     <tr>
-                        <td><label for="dateOfBirth">Birth : </label></td>
+                        <th><label for="dateOfBirth">Birth : </label></th>
                         <td><input type="date" id="dateOfBirth" name="dateOfBirth"><br></td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td colspan="2" rowspan="1" >
+                        
+                        <td colspan="2" >
                             <input type="submit" value="log In" >
                         </td>
                     </tr>
                     <tr>
-                        <tr><td colspan="2"> <audio id="darksoul" controls><source src="demonsoulost.mp3" type="audio/mpeg"></audio></td></tr>
+                        <tr><td colspan="2" class="audio"> <audio id="darksoul" controls><source src="demonsoulost.mp3" type="audio/mpeg"></audio></td></tr>
                         
                     </tr>
                 </thead>
             </table>
         </form>
-        <div><h1>h1 in div</h1></div>
+        
         <h1 class="hiSpider"> spider hi </h1>
 
-        <!--
+        
+
+        div><h1>h1 in div</h1></div>
         <div id="backGround"> <h1>wessam mu</h1></div>
         <h1 class="contont"><a href="https://github.com/WissamMU">my gihup</a></h1>
         <ol class="books">
@@ -55,7 +77,8 @@
             <li>warbreaker</li>
             <li>the way of kings</li>
         </ol>
-        <table class="test">
+        <div>
+            <table id="test">
             <tr>
                 <th>testing</th>
                 <th>tables</th>
@@ -68,6 +91,8 @@
                 <td>cell 1</td> <td>cell 2</td> <td>cell 3</td>
             </tr>
         </table>
+        </div>
+
         <header>
             header
         </header>
