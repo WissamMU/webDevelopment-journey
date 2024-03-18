@@ -1,41 +1,35 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
-    <head>
+  <head>
+    <link rel="stylesheet" href="testingCSS.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    
+    <div class="flexTest">
+      <div class="clock">
+        <span id="hrs">00</span>
+        <span>:</span>
+        <span id="min">00</span>
+        <span>:</span>
+        <span id="sec">00</span>
+      </div>
+    </div>
 
-        <link rel="stylesheet" href="testingCSS.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    </head>
-    <body>
-        <div class="flexTest">
-            <form id="logIn">
-                <h1>Log In <i class="fa fa-code"></i></h1>
-                <label for="userName">User Name</label>
-                <input type="text" id="userName" name="userName"><br>
-                <label for="pwd">Password</label>
-                <input type="password" name="pwd" id="pwd"><br>
-                <input type="submit">
-            </form>
-            <form id="logIn">
-                <h1>Log In</h1>
-                <label for="userName">User Name</label>
-                <input type="text" id="userName" name="userName"><br>
-                <label for="pwd">Password</label>
-                <input type="password" name="pwd" id="pwd"><br>
-                <input type="submit">
-            </form>
-            <form id="logIn">
-                <h1>Log In</h1>
-                <label for="userName">User Name</label>
-                <input type="text" id="userName" name="userName"><br>
-                <label for="pwd">Password</label>
-                <input type="password" name="pwd" id="pwd"><br>
-                <input type="submit">
-            </form>
-        </div>
+    
+    <form id="logIn">
+      <h1>Log In <i class="fa fa-code"></i></h1>
+      <label for="userName">User Name</label>
+      <input type="text" id="userName" name="userName" /><br />
+      <label for="pwd">Password</label>
+      <input type="password" name="pwd" id="pwd" /><br />
+      <input type="submit" />
+    </form>
 
-
-
-        <!--
+    <!--
         <form>
             <table class="tableForLogin">
                 <thead>
@@ -196,6 +190,6 @@
             <small>this is small text</small>
             <big>this is big text</big> -->
 
-
-    </body>
+    <script src="script.js"></script>
+  </body>
 </html>

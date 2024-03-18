@@ -271,6 +271,311 @@ float : left or right
 fonts
         to add font this is how 
         @font-face {
-         font-family: name;
-         src: url(loction);
+          font-family: name;
+          src: url(loction);
         }
+
+===================================================================================================
+
+js (JavaScript)
+This file for that I didnt know or woth to mention
+
+(;)             Semicolon is optional but its better to use it because some time u need it 
+
+(let)           used to declare a variable
+                (,) we can use to declare more then one variable
+                like let username = "wessam" , age = 21
+
+(const)         we dont need (let) to declare a const value
+                the way to name const LIKE_THIS so other know that its a const value
+
+(typeof)        to check for variable type
+                (Null) to remove value
+                (undefined) no value have been sit yet
+                (bigint) for larg integer 
+
+(++x)           x=1 console.log(++x) add one then print //print 1
+(x++)           x=1 console.log(x++) print then add one //print 2     
+
+(===)           to Compare type and value
+(==)            to Compare value
+
+(condition ?    value if true : value if false;) Ternary Operator
+
+(promot)        to ask for a value 
+
+if(number % 2)  this will happen if The remainder is != 0
+
+(do{} while)    happen at least one time even if the condition didnt fulfilled
+(while())       happen only if the condition fulfilled
+
+(break)         live the loop
+(continue)      go to the start of the loop
+
+(function)      dont need to declare variable type
+                (declare) function can be used anywhere 
+                function oddNumbers()
+                (Expression) function can be used after only
+                let end = function()
+(arrow function) 
+                let func = (argl, arg2, ...argN) => expression
+                if one arg : let func = arg => expression
+                if no  arg : let func = () => expression
+(argument)      contain all the arg that got passed to the function
+(rest)          contain the rest of the argument but have the ability have an extra arg before it           
+
+(setTimeout)    used for getting function after time 
+                setTimeout(functionRef((with out())), delay, param1, param2, /* …, */ paramN)
+(clearTimeOut)  to stop setTimeOut if its a variable like let setTimeOut               
+(setInterval)   used to get the same function every delay between calls  
+                setInterval(func, delay, arg1, arg2, /* …, */ argN)
+(clearInterval) to stop setInterval if its a variable like let setInterval 
+
+(Arrays)        to declare an Array look like
+                let names = ["spider" , "wessam" ,"bat"];
+                and we can print it like this 
+                console.log(names)
+(for...in)      for index : for (let index in boys) console.log(index);
+(for...of)      for items : for (let members of boys) console.log(members)
+adding to the array
+(arrayname[4])  used if we how long the array is
+                we can use this way if we dont how long is it arrayname[arrayname.length]
+(.push)         add the the end of the array
+(.unshift)      use to add to the array 
+(.splice)       to add to the middel of the array (method) Array<string>.splice(start: number, deleteCount?: number | undefined): string[] (+1 overload
+                remover form the middle .splice(startin form , how many items to remove)
+(.shift)        remove first item
+(.pop)          remove last item
+(.slice)        to get new array .slice(from,to) or .slice(from) take all the items form the poitnt untill the end or .slice to get a copy
+(.concat)       to add another array
+                console.log(NicNames.concat(PartNicNames))//print both array
+                console.log(NicNames); //print one array
+(.indexOf)      for getting first index of a value -1 mean dosnt have the item
+(.lastindexOf)  for getting Last index of a value -1 mean dosnt have the item
+(.findindexOf)  To get the index of the first item that fulfilled the condition
+(.find)         To get the first item that fulfilled the condition
+(.filter)       To get all the items that fulfilled the condition
+
+(Objects)       to make an Object let ObjectName = {} //leteral way
+(Constructor)   function Person(name,age,gender) {this.name = name; this.age=age ; this.gender = gender;}
+access a value inside an Object
+                (ObjectName.valueName)  To access a value inside an Object 
+                or we can Identify a variable and get access to the value
+                const TheName = 'name';
+                Person[TheName]
+chaing a value inside an Object
+                we can chaing a value like this 
+                Person.name = 'bat';
+                to add new feature ObjectName.fuatureName
+                Person.spiders= 'sup man';
+for deleting 
+                delete Person.spiders;
+(for...in)      used for fuatureNames in Object ex for (item in ObjectName) 
+                item give us fuatureName
+                ObjectName[item] give us fuature value
+                we can get the fuature and the value with out function
+                if(typeof ObjectName[item] 'function') continue; or we can use this
+                const items= Object.items(ObjectName);
+                and for getting one fuature we use 
+                if( 'fuatureName' in ObjectName)
+(Abstract)      if we didnt do this. in function and we used let for variable insted we make Abstract ver and can only be used only in the function
+
+Getters and Setters
+                Object.defineProperty(obj, prop, descriptor)
+                Parameter: This method accepts three parameters as mentioned above and described below:
+                Obj: This parameter holds the Object on which the user is going to define the property.
+                Prop: This parameter holds the name of a property that is going to be defined or modified.
+                Descriptor: This parameter holds the descriptor for the property being defined or modified.
+                Return Value: This method returns the object which is passed as the argument to the function.
+(get)           get : function() {return id;} to return Abstract method 
+(set)           set: function(value) {if (!value) throw new Error('Wrong Id') ;id = value;}
+                used for chaing Abstract method
+(better way to use)
+                we can use Getters and setters in another way with out Object.defineProperty(obj, prop, descriptor)
+                class someone{
+(_Name)         used for naming privite and protected variable 
+                constructor(name,age){
+                    this._name = name;
+                    this._age = age;
+                }
+                get age() {return this._age;}
+                set name(age) {
+                    if (age <1 ) throw new Error('invaled age!');
+                    this._age = age;
+                }
+                }
+(protected)     if we dont have setters
+(privite)       if we dont have Getters and Setters
+
+(prototype)
+                we use prototype to save space in program if the 
+                prototype is Primitive type then it save the value for every son alone
+                but if it is Reference the value is same for evey son
+                const son1 = new son;
+                const son2 = new son;
+                son.prototype.hello = function(){console.log('hello')}
+                
+(Reference and Primitive Types)
+                Primitive Types (String - Number - Boolean - Null )
+                Reference Types (Object - Function - Array)
+                Primitive type gets saved by the value, meanwhile they Reference type get saved by the location in the memory
+                let OldValue = 1;
+                let NewValue = OldValue;
+                OldValue = 2;
+                console.log(OldValue ,'    ',NewValue);
+                //print 2 '    ' 1;
+
+                let oldObject = { numBer : 'one'};
+                let newObject = oldObject ;
+                oldObject.numBer = 'two';
+                now both of them equal newObject {numBer: 'two'} oldObject {numBer: 'two'}
+
+(classes)       just a better function 
+                baisc class
+                class Person {
+                constructor(name){
+                this.name = name;}
+                hello(){
+                console.log( 'Hello World!'); } 
+                }
+(static)        used to make a variable for calss and can by used by the class      
+                if we had class contain static in it like this 
+                    static password(){
+                    console.log('123456789');
+                }
+                to get to the variable like this 
+                ClassName.StaticMethodName();
+
+(strict mod)    we use it to get the errors that dosnt stop the program and for using 'use strict' in the start of the code
+($varName)      for printing a var inside a String NEED TO HAVE `FOR THE TEXT`
+
+(Ingertance)    Used four classes that we need to use more than once. They have the same original value, but they branch after it
+                to use class classSonName extends classFatherName {}
+(super)         used to get the the variable form the father       super(name,age);
+
+Overriding Method
+                1.The existence of an inheritance relationship extends.
+                2.The method must have the same name as the father class.
+                3.The type of the return value must be the same as the type of the return value of the parent class method.
+                just write the name of the method for overloading in the son class
+instanceof
+                The instanceof keyword checks whether an object is an instance of a specific class or an interface
+                The instanceof keyword compares the instance with type
+                The return value is either true or false
+
+(try and catch)
+                for used for errors
+                try {   hello;} catch(errors){console.log(errors);}
+(throw)         used to make a custom error can by a text number Boolean or an object
+(isNaN)         to check if the var is number or not 
+
+(promise)
+                A JavaScript Promise object can be: Pending  Fulfilled  Rejected
+                The Promise object supports two properties: state and result.
+                While a Promise object is "pending" (working), the result is undefined.
+                When a Promise object is "fulfilled", the result is a value. 
+                When a Promise object is "rejected", the result is an error object.
+(.then)         if the promise fulfilled //we can use return after then to do .then again
+(.catch)        if the promise rejected
+(async and await)
+                async makes a function return a Promise
+                await makes a function wait for a Promise
+                The await keyword can only be used inside an async function
+                The await keyword makes the function pause the execution and wait for a resolved promise before it continues
+                (look in the code for exsample (async and await) to find it)
+                for errors we use try and catch   
+
+express library
+                node js library to import first in terminal 
+                npm init -y //this gona make a file to donload the library or any other library
+                npm install express --save 
+                const express = require('express'); //to import the library to the app or we can use import express  from 'express';
+                const app = express();
+how to use http methods (from express library)
+(GET)           Retrive data - and create a  location like (/usere or /homePage)
+                app.get('Loction', arrow function); 
+                app.get('/hello',(req,res) => {res.send('hello')});
+(POST)          create data
+                app.post('/hello',(req,res) => {
+                    res.send('post')});
+normal server and reload when save setting
+                "test": "echo \"Error: no test specified\" && exit 1"
+                "start" : "nodemon server.js" //// npm run start
+
+(axios)         just better fetch 
+
+(cookies)       used to store some info (like language and login status) in user pc 
+                document.cookie = `cookieName = cookieValue ; DateExpires`;
+                document.cookie = `email=spider@js.com;${new Date(2030,1,1).toUTCString()}`;
+                to get cookie from console (document.cookie)
+more info       Types are temporary and permanent
+                This data is stored in strings only
+                Size ranges from 4kb to 1m
+                It expires at a specified time
+
+web storage API
+                (sessionStorage same thing as localStorage just ching the name for using)
+(.setItem)      for saving item
+                localStorage.setItem('keyName','value');
+                localStorage.setItem('name','wessam');
+(.getItem)      to get key item value to a variable
+                let name = localStorage.getItem('name');
+(.removeItem)   remove item by the key
+                localStorage.removeItem('name');
+(.clear)        clear everyting
+                localStorage.clear();
+more info       
+                type local         and         session
+                strings only       and     different for every browser
+                    Permanent      and     temporary
+                Intermediate data  and     user data
+
+
+string
+                let star = "stars"   
+(.charAt)       star.charAt(number) get char from string 
+(.indexOf)      star.indexOf("t") get index of t
+(.replace)      star.replace("oldText" , "new text") replace text
+(.substring)    star.subscript(1,4) starting from 1 take tell 4 (tar) (negtive number = 0)
+(.slice)        star.slice(1 , -1) same as substring but negtive number continue from the back (t)
+(.substr)       star.substr(1,3) start from 1 and take 3 with it (tar)
+
+Date
+                new Date(year,month)
+                new Date(year,month,day)
+                new Date(year,month,day,hours)
+                new Date(year,month,day,hours,minutes)
+                new Date(year,month,day,hours,minutes,seconds)
+                new Date(year,month,day,hours,minutes,seconds,ms)
+                
+Get Date
+getFullYear()	Get year as a four digit number (yyyy)
+getMonth()	Get month as a number (0-11)
+getDate()	Get day as a number (1-31)
+getDay()	Get weekday as a number (0-6)
+getHours()	Get hour (0-23)
+getMinutes()	Get minute (0-59)
+getSeconds()	Get second (0-59)
+getMilliseconds Get millisecond (0-999)
+getTime()	Get time (milliseconds since January 1, 1970)
+
+set date
+setDate()	Set the day as a number (1-31)
+setFullYear()	Set the year (optionally month and day)
+setHours()	Set the hour (0-23)
+setMilliseconds Set the milliseconds (0-999)
+setMinutes()	Set the minutes (0-59)
+setMonth()	Set the month (0-11)
+setSeconds()	Set the seconds (0-59)
+setTime()	Set the time (milliseconds since January 1, 1970)
+
+// DOM (document Object Model)
+document        used to get element from html fileName
+(.write)                        document.write("write an somthing in the html file")
+getElementById(id)	        Find an element by element id
+getElementsByTagName(name)	Find elements by tag name
+getElementsByClassName(name)	Find elements by class name
+innerHTML                       The innerHTML property can be used to get or change any
+                                HTML element, including <html> and <body>
+                                document.getElementById("demo").innerHTML = "Hello World!";
+
