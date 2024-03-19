@@ -317,7 +317,16 @@ if(number % 2)  this will happen if The remainder is != 0
                 function oddNumbers()
                 (Expression) function can be used after only
                 let end = function()
+                function functionName(parameter1, parameter2, ...) {
+                        // Code to be executed when the function is called
+                        // This code can access the provided parameters
+                        return value; // Optional: Return a value from the function
+                }
+                calling a function
+                let result = functionName(argument1, argument2, ...); // Provide arguments for parameters
+                console.log(result); // Print the returned value (if any)
 (arrow function) 
+                (parameters) => { function body }
                 let func = (argl, arg2, ...argN) => expression
                 if one arg : let func = arg => expression
                 if no  arg : let func = () => expression
@@ -332,7 +341,13 @@ if(number % 2)  this will happen if The remainder is != 0
 (clearInterval) to stop setInterval if its a variable like let setInterval 
 
 (Arrays)        to declare an Array look like
-                let names = ["spider" , "wessam" ,"bat"];
+                let arrayName = [
+                        "item1",   // String item
+                        3,         // Number item
+                        true,      // Boolean item
+                        null,      // Null value
+                        undefined  // Undefined value
+                ];
                 and we can print it like this 
                 console.log(names)
 (for...in)      for index : for (let index in boys) console.log(index);
@@ -357,6 +372,17 @@ adding to the array
 (.filter)       To get all the items that fulfilled the condition
 
 (Objects)       to make an Object let ObjectName = {} //leteral way
+                let objectName = {
+                property1: value1,
+                property2: value2,
+                // ... more properties
+                method1: function() {
+                // Function body
+                },
+                method2: () => { // Arrow function
+                // Function body
+                }
+                };
 (Constructor)   function Person(name,age,gender) {this.name = name; this.age=age ; this.gender = gender;}
 access a value inside an Object
                 (ObjectName.valueName)  To access a value inside an Object 
@@ -431,13 +457,26 @@ Getters and Setters
                 now both of them equal newObject {numBer: 'two'} oldObject {numBer: 'two'}
 
 (classes)       just a better function 
-                baisc class
-                class Person {
-                constructor(name){
-                this.name = name;}
-                hello(){
-                console.log( 'Hello World!'); } 
+                class ClassName {
+                  // Constructor (optional)
+                  constructor(parameters) {
+                  // Code to be executed when a new object is created
+                  // Often used to initialize properties
+                  this.property1 = value1;
+                  this.property2 = value2;
+                // ...
                 }
+                  // Methods (functions within the class)
+                methodName1(parameters) {
+                  // Function body
+                  // Can access class properties using 'this' keyword
+                }
+                  methodName2(parameters) {
+                  // Function body (can be an arrow function)
+                }
+                  // ... more methods
+                }
+
 (static)        used to make a variable for calss and can by used by the class      
                 if we had class contain static in it like this 
                     static password(){
