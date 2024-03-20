@@ -618,3 +618,45 @@ innerHTML                       The innerHTML property can be used to get or cha
                                 HTML element, including <html> and <body>
                                 document.getElementById("demo").innerHTML = "Hello World!";
 
+===================================================================================================
+
+jQuery ($) is the sort cut for it 
+
+to access somthing
+$(h1)                   access with tag name
+$("#elementId"):        Selects the element with the specified ID (e.g., $("#myDiv")).
+$(".className"):        Selects all elements with the specified class (e.g., $(".btn")).
+$("tagName"):           Selects all elements with the specified tag name (e.g., $("p")).
+$("[attributeName='value']"): 
+                        Selects elements with a specific attribute and value 
+                        (e.g., $("[href='#top']")). also can be !=
+     
+Once you've selected elements, you can perform various actions on them:
+$(selector).html("content"): 
+                        Replaces the HTML content of the selected element(s).
+$(selector).text("content"): 
+                        Replaces the text content of the selected element(s).
+$(selector).attr("attributeName", "value"): 
+                        Sets or modifies the value of an attribute on the selected element(s).
+$(selector).css("propertyName", "value"): 
+                        Sets or modifies a CSS style property on the selected element(s).
+$(selector).addClass("className") or $(selector).removeClass("className"): 
+                        Adds or removes a class from the selected element(s).
+
+You can attach event listeners to elements using jQuery to respond to user interactions:
+$(selector).click(function() { ... }): 
+                        Executes a function when the selected element(s) is clicked.
+$(selector).hover(function() { ... }, function() { ... }): 
+                        Executes one function when the mouse enters the element(s) and another when it leaves.
+$(selector).submit(function() { ... }): 
+                        Executes a function when a form is submitted (useful for validation)
+
+.parent                 we can use it to attach affect to the parent element
+                                $("a").parent().css("backgroundColor", "orange");
+                        here we give the parent element for ("a") css backgroundColor 
+.children               we can use it to attach affect to the children element
+                                $("p").children().css("backgroundColor", "red"); 
+                        here we give the children element for ("p") css backgroundColor
+
+.addClass               to add a class to the element 
+.focus                  actions on the element on click

@@ -6,20 +6,28 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      jQuery(document).ready(function () {
+        $("a").text("clice here").attr("href", "https://www.youtube.com/");
+        $("a").parent().css("backgroundColor", "orange");
+        $("h1").click(function () {
+          alert("dont click on me ");
+        });
+      });
+      $(function () {
+        $("#logIn input[type='text'], #logIn input[type='password']").focus(function () {
+            $(this).addClass("inputStyle");
+        });
+    });
+    </script>
   </head>
   <body>
-    
-    <div class="flexTest">
-      <div class="clock">
-        <span id="hrs">00</span>
-        <span>:</span>
-        <span id="min">00</span>
-        <span>:</span>
-        <span id="sec">00</span>
-      </div>
+    <div>
+      <a></a> <a></a> <a></a>
+      <h1>suuuppp</h1>
     </div>
 
-    
     <form id="logIn">
       <h1>Log In <i class="fa fa-code"></i></h1>
       <label for="userName">User Name</label>
@@ -29,6 +37,16 @@
       <input type="submit" />
     </form>
 
+    <!--clock
+     <div class="flexTest">
+      <div class="clock">
+        <span id="hrs">00</span>
+        <span>:</span>
+        <span id="min">00</span>
+        <span>:</span>
+        <span id="sec">00</span>
+      </div>
+    </div> -->
     <!--
         <form>
             <table class="tableForLogin">

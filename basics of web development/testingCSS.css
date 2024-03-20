@@ -88,6 +88,7 @@ form#logIn > input[type="submit"] {
     font-family: MadimiOne-Regular,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     border-radius: 10px;
+    
 
 }
 
@@ -145,9 +146,13 @@ td:nth-child(even):hover{
     font-family: MadimiOne-Regular;
     src: url(MadimiOne-Regular.ttf);
 }
-
+.inputStyle{
+    background-color: rgb(156, 5, 5) ;
+    border: 3px solid black;
+}
 
 /*the clock*//*
+
 .container{
     width: 800px;
     height:180px;
@@ -189,3 +194,4 @@ td:nth-child(even):hover{
 #sec::after{
     content: 'Sec';
 }*/
+

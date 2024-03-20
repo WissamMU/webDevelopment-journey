@@ -14,5 +14,5 @@ setInterval(() => {
 
 
 let star = new Date();
-document.write(star.getTime());
+document.write(star.getFullYear());
 
