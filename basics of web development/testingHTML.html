@@ -7,8 +7,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js"
+      integrity="sha512-WMEKGZ7L5LWgaPeJtw9MBM4i5w5OSBlSjTjCtSnvFJGSVD26gE5+Td12qN5pvWXhuWaWcVwF++F7aqu9cvqP0A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script>
-      jQuery(document).ready(function () {
+      /*jQuery(document).ready(function () {
         $("a").text("clice here").attr("href", "https://www.youtube.com/");
         $("a").parent().css("backgroundColor", "orange");
         $("h1").click(function () {
@@ -19,14 +25,68 @@
         $("#logIn input[type='text'], #logIn input[type='password']").focus(function () {
             $(this).addClass("inputStyle");
         });
-    });
+    });*/
+
+      $(function () {
+        $("#load").click(function () {
+          $.ajax({
+            url: "https://jsonplaceholder.typicode.com/todos",
+            type: "GET",
+            dataType: "json",
+            success: function (json, status) {
+              let todos ='';
+              $.each(json, function (key, value) {
+                todos += "<tr>";
+                todos += "<td>" + value.id + "</td>";
+                todos += "<td>" + value.userId + "</td>";
+                todos += "<td>" + value.title + "</td>";
+                todos += "<td>" + value.completed + "</td>";
+                todos += "</tr>";
+            });
+            $("#todos").append(todos);
+            },
+            error: function (result, status, error) {
+              console.log("unable to load json file");
+            },
+            complete: function (result, status) {
+              console.log("loading complete");
+            },
+          });
+        });
+      });
+
+      $(function () {
+        $("#logIn").validate({
+          rules: {
+            userName: { required: true },
+            pwd: { required: true },
+            checkbox: { required: true },
+          },
+        });
+      });
+
+      $(function () {
+        $("#goBottom").click(function () {
+          $("html, body").animate({ scrollTop: $(document).height() }, 1200);
+          return false;
+        });
+
+        $("#goTop").click(function () {
+          $("html, body").animate({ scrollTop: 0 }, 1200);
+          return false;
+        });
+
+        $(document).contextmenu(function () {
+          // Add your desired context menu functionality here
+          return true;
+        });
+      });
     </script>
   </head>
   <body>
-    <div>
-      <a></a> <a></a> <a></a>
-      <h1>suuuppp</h1>
-    </div>
+    <div><a href="#" id="goBottom"> go down</a></div>
+
+
 
     <form id="logIn">
       <h1>Log In <i class="fa fa-code"></i></h1>
@@ -34,9 +94,26 @@
       <input type="text" id="userName" name="userName" /><br />
       <label for="pwd">Password</label>
       <input type="password" name="pwd" id="pwd" /><br />
-      <input type="submit" />
+      <input type="checkbox" name="checkbox" id="checkbox" />
+      <label>are you human<br /></label>
+      <input type="submit" id="load"/>
     </form>
 
+    <table border="2" id="todos" >
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>User ID</th>
+                <th>title</th>
+                <th>complete</th>
+            </tr>
+        </thead>
+    </table>
+
+    <!-- 
+    <a></a> <a></a> <a></a>
+    <h1>suuuppp</h1>
+    </div> -->
     <!--clock
      <div class="flexTest">
       <div class="clock">
@@ -207,7 +284,7 @@
             <sup>this is superscript text</sup>
             <small>this is small text</small>
             <big>this is big text</big> -->
-
+    <div><a href="#" id="goTop"> go up</a></div>
     <script src="script.js"></script>
   </body>
 </html>

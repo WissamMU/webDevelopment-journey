@@ -660,3 +660,63 @@ $(selector).submit(function() { ... }):
 
 .addClass               to add a class to the element 
 .focus                  actions on the element on click
+.show                   show the element
+.hide                   hide the element  
+.toggle(time in ms)     toggle the element (show or hide)
+
+animate                 $(selector).animate({ properties }, { options });
+                        { properties }: This is an object that defines the CSS properties you want
+                        to animate. The keys of the object are the CSS properties (e.g., "opacity",
+                        "width", "height", "backgroundColor"), and the values are the target values
+                        for those properties during the animation
+                        { options } (Optional): This is an object that allows you to configure
+                        various aspects of the animation. Here are some common options:
+                        duration (milliseconds): Specifies the duration of the animation.
+                        easing: Specifies the easing function that controls the animation's
+                        speed curve (e.g., "swing", "linear", "easeInQuad").
+                        complete (function): A function to be executed after the animation finishes.
+
+ajax                    The basic form for AJAX in jQuery involves four main parts:
+Selecting Elements:
+                        $("#sendRequestButton"): Selects the button with the ID "sendRequestButton".
+                        $("#responseContainer"): Selects the element with the ID "responseContainer"
+                        where you'll display the response.
+Defining the Request:
+                        The .click event listener triggers the AJAX request when the button is clicked.
+                        Inside the $.ajax function:
+                        url: Replace with the actual URL of your server-side script that handles the request.
+                        method: Set to "GET" in this example (change to "POST" if sending data).
+                        dataType: Set to "json" if expecting JSON data from the server
+                        (adjust as needed).
+Handling Success:
+                        The success function is called if the request is successful.
+                        This example uses JSON.stringify(response) to display the JSON response
+                        data in the response container (text element). Modify this logic based on your needs.
+Handling Errors:
+                        The error function is called if an error occurs during the request.
+                        It receives details about the error, which you can log to the console
+                        or display to the user.
+                        $(function () {
+                            // 1. Select elements
+                            const button = $("#sendRequestButton"); // Button to trigger the request
+                            const responseContainer = $("#responseContainer"); // Where to display the response
+
+                            // 2. Define the AJAX request
+                            button.click(function () {
+                            $.ajax({
+                                url: "/your/server/script.php", // Replace with your actual URL
+                                method: "GET", // Adjust method if needed
+                                dataType: "json", // Adjust data type if needed
+                                success: function (response) {
+                                // 3. Handle success
+                                responseContainer.text(JSON.stringify(response)); // Example: display JSON response
+                                },
+                                error: function (jqXHR, textStatus, errorThrown) {
+                                // 4. Handle errors
+                                console.error("AJAX Error:", textStatus, errorThrown);
+                                },
+                            });
+                            });
+                        });
+
+      

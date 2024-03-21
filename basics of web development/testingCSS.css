@@ -150,6 +150,10 @@ td:nth-child(even):hover{
     background-color: rgb(156, 5, 5) ;
     border: 3px solid black;
 }
+.error{
+    color: red;
+}
+
 
 /*the clock*//*
 
