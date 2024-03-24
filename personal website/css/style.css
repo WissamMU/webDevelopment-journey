@@ -140,7 +140,10 @@ nav ul li a:hover {
     fill: #F2EFE5;
 }
 
-#newsletter {
+/*newsltter     ***************************************************************/
+
+
+#newsletter , #boxes {
     background-color: #302E26;
     background-size: cover;
     width: 100%;
@@ -153,25 +156,99 @@ nav ul li a:hover {
 }
 
 #newsflex > form {
-    width: 300px;
+    width: 500px;
 }
 form >button[type="submit"]{
     color: #302E26;
     font-weight: bold; 
     background-color: #F2EFE5;
     border-radius: 10% ;
-    padding: 0 5%;
-
 }
 form >input[type="email"]{
-    border-radius: 10%  ;
-    text-align: center;
     font-weight: bold;
     font-family: var(--main-font);
+    border:3px solid silver;
+    border-radius: 50px;
+    height: 25px;
+    width: 50%;
+    border-top: 1px solid rgba(192, 192, 192, 0.658);
+    border-left: 5px;
+    background-color:rgba(192, 192, 192, 0.349);
+    margin: auto;
+    text-align: center;
 }
+form > button[type="submit"]{
+    width: 30%;
+    height: 25px;
+    background-color: #F2EFE5;
+    text-transform: uppercase;
+    color: #302E26;
+    font-family: MadimiOne-Regular,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
 #newsflex {
     display: flex;
     justify-content: space-around;
     align-items: center;
     
+}
+/*boxes   ***************************************************************/
+
+#boxes{
+    display: flex;
+    text-align: center;
+    color: #F2EFE5;
+    padding: 25px 40px 25px 40px;
+}
+.box{
+    padding: 30px;
+}
+.box >*{
+    margin: 15px;
+}
+@media (max-width: 1020px){
+    #boxes{
+        flex-direction: column;
+    }
+}
+/*footer    *************************************************************************/
+
+#footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #302E26;
+    background-color: #8B887F;
+
+}
+
+.waveBottom {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    background-color: #302E26;
+}
+
+.waveBottom svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 44px;
+}
+
+.waveBottom .shape-fill {
+    fill: #8B887F;
+}
+#footerText{
+    width: 100%;
+    margin: 30px;
+    display: flex;
+    text-align: center;
 }
