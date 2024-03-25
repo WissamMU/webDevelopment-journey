@@ -221,10 +221,8 @@ form > button[type="submit"]{
     align-items: center;
     text-align: center;
     color: #302E26;
-    background-color: #8B887F;
-
 }
-
+#bat{color: #302E26;}
 .waveBottom {
     position: relative;
     bottom: 0;
@@ -244,7 +242,7 @@ form > button[type="submit"]{
 }
 
 .waveBottom .shape-fill {
-    fill: #8B887F;
+    fill: #F2EFE5;
 }
 #footerText{
     width: 100%;
