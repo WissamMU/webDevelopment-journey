@@ -1,0 +1,15 @@
+/* search bar */
+#wrapper{
+    width: auto;
+    max-width: 100%;
+    position: relative;
+    
+}
+#wrapper input{
+    width: 100%;
+}
+#wrapper button{
+    aspect-ratio: 1;
+    position: absolute;
+    right: 0;
+}
