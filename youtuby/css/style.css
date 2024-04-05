@@ -13,3 +13,15 @@
     position: absolute;
     right: 0;
 }
+
+.social-media{
+    bottom: 18px;
+    left: 20px;
+}
+.follow{
+    bottom: 18px;
+    right: 20px;
+}
+#ulForChannel a{
+    color: gray !important;
+}
