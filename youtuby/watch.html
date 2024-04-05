@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>youtuby | hsoub academy</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="mt-5">
+
+    <div id="topMenu">
+        <div class="container-fluid ">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark  fixed-top">
+                <a class="navbar-brand" href="index.html">YouTuby</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Recommended </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">recently uploaded</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link " href="#" tabindex="0">Trending</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="px-2 nav-link  btn-secondary text-white rounded text-center d-inline-block"
+                                href="#" data-toggle="modal" data-target="#LogInModle">Log In</a>
+                        </li>
+                    </ul>
+                    <div class="form-inline my-2 my-lg-0 " id="wrapper">
+                        <input class="form-control mr-sm-2 pr-5 rounded-pill " type="search" placeholder="Search">
+                        <button onclick="location.href='search.html';" class="btn  m-2 rounded-pill" type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </div>
+            </nav>
+
+
+            <!-- Modal -->
+            <div class="modal fade " id="LogInModle" tabindex="-1"">
+        <div class=" modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Log In</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="email" class="col-form-label">Email:</label>
+                                <input type="email" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="Password" class="col-form-label">Password:</label>
+                                <input type="password" class="form-control" id="recipient-name">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="">forgot password?</a>
+                        <a href="" class="mx-auto">sign up</a>
+                        <button type="button" class="btn  btn-outline-secondary">Log In</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="watch-page">
+        <div class="container-fluid">
+
+        </div>
+    </div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
