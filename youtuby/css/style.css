@@ -1,27 +1,32 @@
 /* search bar */
-#wrapper{
+#wrapper {
     width: auto;
     max-width: 100%;
     position: relative;
-    
+
 }
-#wrapper input{
+
+#wrapper input {
     width: 100%;
 }
-#wrapper button{
+
+#wrapper button {
     aspect-ratio: 1;
     position: absolute;
     right: 0;
 }
 
-.social-media{
+.social-media {
     bottom: 18px;
     left: 20px;
 }
-.follow{
+
+.follow {
     bottom: 18px;
     right: 20px;
 }
-#ulForChannel a{
+
+#ulForChannel a {
     color: gray !important;
+    padding: auto;
 }
