@@ -1,4 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Reem+Kufi+Fun:wght@400..700&family=Tilt+Neon&display=swap');
+@font-face {
+    font-family: "Tilt Neon", "Cairo", sans-serif;
+    src: url(../font/TiltNeon.ttf);
+}
+
+body {
+    font-family: "Tilt Neon", sans-serif;
+    font-weight: bold !important;
+    background-color: #fafafa;
+}
+
+#topMenu .video-icon {
+    background-color: violet;
+    color: white;
+    border-radius: 15%;
+}
+
+#topMenu .bg-light{
+    background-color: white !important;
+}
+
+.AR{
+    font-family: "Cairo" , "Arial" , "sans-serif";
+}
+button ,.logIn{
+    background-color: transparent !important;
+    color: violet !important;
+    border-color: violet I !important ;
+}
+button:hover {
+    color: blueviolet !important;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .active>.nav-link{
+    background-color: violet;
+    color: white;
+    border-radius: 0.25rem !important;
+
+}
+input.form-control:focus,
+button:focus{
+    box-shadow: none;
+}
+
 /* search bar */
+
 #wrapper {
     width: auto;
     max-width: 100%;
@@ -27,5 +74,5 @@
 }
 
 #ulForChannel a {
-    color: gray ;
+    color: gray;
 }
