@@ -9,6 +9,23 @@ body {
     font-weight: bold !important;
     background-color: #fafafa;
 }
+a{
+    color: black ;
+    text-decoration: none !important;
+}
+
+button ,.logIn{
+    background-color: transparent !important;
+    color: violet !important;
+    border-color: violet I !important ;
+}
+button:hover {
+    color: blueviolet !important;
+}
+.AR{
+    font-family: "Cairo" , "Arial" , "sans-serif";
+}
+
 
 #topMenu .video-icon {
     background-color: violet;
@@ -20,17 +37,6 @@ body {
     background-color: white !important;
 }
 
-.AR{
-    font-family: "Cairo" , "Arial" , "sans-serif";
-}
-button ,.logIn{
-    background-color: transparent !important;
-    color: violet !important;
-    border-color: violet I !important ;
-}
-button:hover {
-    color: blueviolet !important;
-}
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .active>.nav-link{
@@ -42,6 +48,36 @@ button:hover {
 input.form-control:focus,
 button:focus{
     box-shadow: none;
+}
+
+.card .card-icons{
+    position: relative;
+}
+
+time{
+    position: absolute;
+    bottom: 10px;
+    right: 7px;
+    color: white;
+    background-color: rgb(65, 65, 65) !important;
+    padding: 0px 3px;
+    border-radius: 0.5rem;
+}
+.card .fa-play{
+    position: absolute;
+    top: 43%;
+    right: 41%;
+    color: rgb(83, 83, 83) !important;
+    display: none;
+}
+.card:hover .fa-play{
+    display: inline;
+}
+.card:hover{
+    transform: translateY(-.9%);
+}
+.card{
+    transition: transform .25s;
 }
 
 /* search bar */
