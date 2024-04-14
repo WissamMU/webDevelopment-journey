@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Reem+Kufi+Fun:wght@400..700&family=Tilt+Neon&display=swap');
+
 @font-face {
     font-family: "Tilt Neon", "Cairo", sans-serif;
     src: url(../font/TiltNeon.ttf);
@@ -9,21 +10,25 @@ body {
     font-weight: bold !important;
     background-color: #fafafa;
 }
-a{
-    color: black ;
+
+a {
+    color: black;
     text-decoration: none !important;
 }
 
-button ,.logIn{
+button,
+.logIn {
     background-color: transparent !important;
     color: violet !important;
-    border-color: violet I !important ;
+    border-color: violet I !important;
 }
+
 button:hover {
     color: blueviolet !important;
 }
-.AR{
-    font-family: "Cairo" , "Arial" , "sans-serif";
+
+.AR {
+    font-family: "Cairo", "Arial", "sans-serif";
 }
 
 
@@ -33,28 +38,29 @@ button:hover {
     border-radius: 15%;
 }
 
-#topMenu .bg-light{
+#topMenu .bg-light {
     background-color: white !important;
 }
 
 
 .navbar .navbar-nav .nav-link:hover,
-.navbar .navbar-nav .active>.nav-link{
+.navbar .navbar-nav .active>.nav-link {
     background-color: violet;
     color: white;
     border-radius: 0.25rem !important;
 
 }
+
 input.form-control:focus,
-button:focus{
+button:focus {
     box-shadow: none;
 }
 
-.card .card-icons{
+.card .card-icons {
     position: relative;
 }
 
-time{
+time {
     position: absolute;
     bottom: 10px;
     right: 7px;
@@ -63,21 +69,31 @@ time{
     padding: 0px 3px;
     border-radius: 0.5rem;
 }
-.card .fa-play{
+
+.card .fa-play {
     position: absolute;
     top: 43%;
     right: 41%;
     color: rgb(83, 83, 83) !important;
     display: none;
 }
-.card:hover .fa-play{
+
+.card:hover .fa-play {
     display: inline;
 }
-.card:hover{
+
+.card:hover {
     transform: translateY(-.9%);
 }
-.card{
+
+.card {
     transition: transform .25s;
+}
+
+.test {
+    position: absolute;
+    right: 10px !important;
+
 }
 
 /* search bar */
