@@ -29,6 +29,7 @@ button:hover {
 
 .AR {
     font-family: "Cairo", "Arial", "sans-serif";
+    font-size: small !important;
 }
 
 
@@ -95,6 +96,58 @@ time {
     right: 10px !important;
 
 }
+
+.sidebar{
+    position: fixed !important;
+    z-index: 4;
+    left: -17rem;
+    transition: all 0.5s ease-in-out;
+    height: 100%;
+    background-color: white;
+    overflow: hidden;
+    padding-bottom:150px ;
+}
+.sidebar:hover{
+    overflow-y: scroll;
+}
+.sidebar .purple{
+    color: violet;
+}
+.sidebar .list-group-item:hover{
+    color: white !important;
+    background-color: violet !important;
+}
+.sidebar .list-group-item:hover .purple{
+    color: white !important;
+}
+#wrap.toggled .sidebar{
+    left: 0rem;
+}
+#toggler:hover{
+    cursor: pointer;
+}
+.sidebar::-webkit-scrollbar{
+    background-color: white;
+    width: 8px;
+}
+.sidebar::-webkit-scrollbar-thumb{
+    background-color: aliceblue;
+    width: 8px;
+}
+.layer {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+    display: none;
+}
+
+
+
+
+
 
 /* search bar */
 
