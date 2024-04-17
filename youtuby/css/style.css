@@ -90,6 +90,10 @@ time {
 .card {
     transition: transform .25s;
 }
+.card .card-title {
+    height: 50px;
+    overflow: hidden;
+}
 
 .test {
     position: absolute;
@@ -145,12 +149,6 @@ time {
 }
 
 
-
-
-
-
-/* search bar */
-
 #wrapper {
     width: auto;
     max-width: 100%;
@@ -181,3 +179,71 @@ time {
 #ulForChannel a {
     color: gray;
 }
+
+.navbar .search-icon{
+    color: violet !important;
+    cursor: pointer;
+    padding: 15px 10px;
+    position: absolute;
+    top: 15px;
+    right: 132px;
+    display: none;
+    border-radius: .5rem;
+}
+.navbar .search-icon:hover{
+    color: white !important;
+    background-color: violet !important;
+}
+.search-input{
+    position: absolute;
+    top: 72px;
+    border: none;
+    padding: 6px 23px;
+    height:  60px;
+    background-color: lightgray;
+    display: none;
+    z-index: 1;
+}
+.search-input:focus{
+        background-color: lightgray;
+}
+.container-fluid {
+    padding: 0px;
+    overflow: hidden !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1000px){
+    .navbar .collapse .form-inline{
+        display: none;
+    }
+    .navbar .search-icon{
+        display: inline;
+    }
+}
+@media(min-width:1000px){
+
+    .search-input{
+        display: none !important;
+    }
+
+}
+
+
+
+

@@ -5,15 +5,18 @@ $(document).ready(function(){
     });
     $("#toggler").click(function(event) {
         $('#wrap').toggleClass('toggled');
-        var left = $('.sidebar').css("left"); //أعطينا هذه الخاصية للقائمة الجانبية لكي تُصبح على اليمين
-        if (left == '0px') //القائمة الجانبية بحالة إظهار وبالتالي يجب إغلاقها
+        var left = $('.sidebar').css("left");
+        if (left == '0px') 
         {
             $('.sidebar').css({ 'left': '-17rem' });
-            $('.layer').fadeOut(); /*أخفي الطبقة السوداء*/
+            $('.layer').fadeOut(); 
         }
-        else { //القائمة الجانبية بحالة إغلاق وبالتالي يجب إظهارها
+        else { 
             $('.sidebar').css({ 'left': '0' });
             $('.layer').fadeIn(); 
         }
+    });
+    $(".search-icon").click(function() {
+        $(".search-input").slideToggle("show");
     });
 });
