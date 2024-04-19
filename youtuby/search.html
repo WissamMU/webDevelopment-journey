@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/search.css">
 </head>
 
 <body class="mt-5">
@@ -136,11 +137,12 @@
     <div class="search-header pt-5">
         <div class="container">
             <div class="row">
-                <div class="col-6">909 result</div>
-                <div class="col-6"><span class="float-right"><i class="fa-solid fa-filter"></i> filter</span></div>
-            </div>
+                <div class="col-6">99 result</div>
+                <div class="col-6"><span class="float-right" id="search-filter-icon">
+                    <i class="fa-solid fa-filter"></i> filter</span></div>
+                </div>
             <div class="row mt-4">
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-3 filter-column">
                     <div class="text-center">upload date</div>
                     <hr>
                     <label class="d-block mb-3">
@@ -165,7 +167,7 @@
                         <span>This yeat</span>
                     </label>
                 </div>
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-3 filter-column">
                     <div class="text-center">Type</div>
                     <hr>
                     <label class="d-block mb-3">
@@ -185,7 +187,7 @@
                         <span>Movie</span>
                     </label>
                 </div>
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-3 filter-column">
                     <div class="text-center">Duration</div>
                     <hr>
                     <label class="d-block mb-3">
@@ -201,7 +203,7 @@
                         <span>Over 20 minutes</span>
                     </label>
                 </div>
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-3 filter-column">
                     <div class="text-center">Sort by</div>
                     <hr>
                     <label class="d-block mb-3">
@@ -230,9 +232,11 @@
             <div class="col-12 my-3">
                 <div class="card ">
                     <div class="card-horizontal d-md-flex d-block">
-                        <div class="img-square-wrapper">
+                        <div class="card-icons img-square-wrapper">
                             <a href="watch.html">
                                 <img class="card-img-top" src="img/thumbnail/restful.jpg" alt="Card image cap">
+                                <time>21:59</time>
+                                <i class="fas fa-play fa-2x"></i>
                             </a>
                         </div>
                         <div class="card-body p-2">
@@ -255,13 +259,16 @@
                 </div>
             </div>
         </div>
+
         <div class="row">
             <div class="col-12 my-3">
                 <div class="card ">
                     <div class="card-horizontal d-md-flex d-block">
-                        <div class="img-square-wrapper">
-                            <a href="watch.html">
+                        <div class="card-icons img-square-wrapper ">
+                            <a href="watch.html ">
                                 <img class="card-img-top" src="img/thumbnail/khamsat3.png" alt="Card image cap">
+                                <time>1:09</time>
+                                <i class="fas fa-play fa-2x"></i>
                             </a>
                         </div>
                         <div class="card-body p-2">
@@ -285,15 +292,15 @@
             </div>
         </div>
 
-
-
         <div class="row">
             <div class="col-12 my-3">
                 <div class="card ">
                     <div class="card-horizontal d-md-flex d-block">
-                        <div class="img-square-wrapper">
+                        <div class="card-icons img-square-wrapper">
                             <a href="watch.html">
                                 <img class="card-img-top" src="img/thumbnail/devtools.jpg" alt="Card image cap">
+                                <time>2:50</time>
+                                <i class="fas fa-play fa-2x"></i>
                             </a>
                         </div>
                         <div class="card-body p-2">
@@ -322,9 +329,11 @@
             <div class="col-12 my-3">
                 <div class="card ">
                     <div class="card-horizontal d-md-flex d-block">
-                        <div class="img-square-wrapper">
+                        <div class="card-icons img-square-wrapper">
                             <a href="watch.html">
                                 <img class="card-img-top" src="img/thumbnail/php.jpg" alt="Card image cap">
+                                <time>22:55</time>
+                                <i class="fas fa-play fa-2x"></i>
                             </a>
                         </div>
                         <div class="card-body p-2">
@@ -347,13 +356,16 @@
                 </div>
             </div>
         </div>
+
         <div class="row">
             <div class="col-12 my-3">
                 <div class="card ">
                     <div class="card-horizontal d-md-flex d-block">
-                        <div class="img-square-wrapper">
+                        <div class="card-icons img-square-wrapper">
                             <a href="watch.html">
                                 <img class="card-img-top" src="img/thumbnail/ruby.jpg" alt="Card image cap">
+                                <time>11:00</time>
+                                <i class="fas fa-play fa-2x"></i>
                             </a>
                         </div>
                         <div class="card-body p-2">
@@ -384,6 +396,8 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/search.js"></script>
+    
 </body>
 
 </html>

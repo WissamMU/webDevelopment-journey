@@ -1,0 +1,27 @@
+
+
+
+#search-filter-icon{
+    cursor: pointer;
+}
+.search-header .filter-column {
+    display: none;
+}
+
+
+
+
+
+
+
+@media (max-width: 992px) {
+    .card-img, .card-img-top, .card-img-bottom {
+         width: auto !important; 
+    }
+    .card .card-horizontal time {
+        right: 10px;
+    }
+    .card .card-horizontal .fa-play {
+        left: 48%;
+    }
+}

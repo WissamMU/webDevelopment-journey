@@ -195,8 +195,8 @@ time {
     background-color: violet !important;
 }
 .search-input{
-    position: absolute;
-    top: 72px;
+    position: fixed;
+    top: 53px;
     border: none;
     padding: 6px 23px;
     height:  60px;
