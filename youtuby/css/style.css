@@ -212,7 +212,36 @@ time {
     overflow: hidden !important;
 }
 
-
+/* card size */
+.card .card-horizontal .card-body .channel-img {
+    display: block;
+    margin-top: 10px;
+}
+.card-img, .card-img-top, .card-img-bottom {
+    height: 100% !important;
+    width: auto;
+    margin-right: 1.5rem;
+}
+.card .card-horizontal .card-body p{
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+.card-body {
+    min-width: 0;
+}
+@media(max-width:767px){
+    .card-img, .card-img-top, .card-img-bottom {
+        width: 100%;
+    }
+    .card .card-horizontal time{
+        right: 10px;
+    }
+    .card .card-horizontal .fa-paly{
+        left: 48%;
+    }
+}
+/* ***************************************** */
 
 
 

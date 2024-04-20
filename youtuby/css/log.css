@@ -1,0 +1,29 @@
+
+.history-right-column{
+    background-color: white;
+    height: 566px;
+}
+.list-group-item.active {
+    background-color: violet;
+    border-color: violet;
+}
+
+.history-page .remove{
+    position: absolute;
+    top: 10px;
+    left: 13px;
+    color: rgb(26, 26, 26) !important;
+    cursor: pointer;
+}
+
+
+@media(max-width:767px){
+    .card-img, .card-img-top, .card-img-bottom {
+        width: 100%;
+    }
+}
+@media(max-width:991px){
+    .card{
+        margin-top: 30px;
+    }
+}
