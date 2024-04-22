@@ -20,7 +20,7 @@ button,
 .logIn {
     background-color: transparent !important;
     color: violet !important;
-    border-color: violet I !important;
+    border-color: violet !important;
 }
 
 button:hover {
@@ -51,6 +51,7 @@ button:hover {
     border-radius: 0.25rem !important;
 
 }
+
 
 input.form-control:focus,
 button:focus {
@@ -164,6 +165,7 @@ time {
     aspect-ratio: 1;
     position: absolute;
     right: 0;
+    border: none !important;
 }
 
 .social-media {
