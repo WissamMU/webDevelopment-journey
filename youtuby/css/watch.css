@@ -9,3 +9,34 @@
 .card-text .more{
     display: none;
 }
+.form-group .form-control:focus{
+    box-shadow: none;
+}
+.card-inner{
+    display: none;
+}
+
+.public-comment .card .btn {
+    background-color: violet;
+    border-color: violet;
+    color: #fff;
+}
+.public-comment .card .btn:hover {
+    background-color: rgb(236, 153, 236);
+}
+time{
+    right:17px;
+}
+.fa-play{
+    left: 46% !important;
+}
+@media (max-width: 1137px){
+    #myBtn{
+        margin-bottom:60px !important;
+    }
+}
+@media (max-width: 650px){
+    .reply-time{
+        font-size: 10px;
+    }
+}
