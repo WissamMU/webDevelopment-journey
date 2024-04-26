@@ -23,7 +23,7 @@
 
 @media(max-width:767px){
     .card-img, .card-img-top, .card-img-bottom {
-        width: 100%;
+        width: 100% !important;
     }
 }
 @media(max-width:991px){

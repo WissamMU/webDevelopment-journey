@@ -24,7 +24,8 @@ button,
 }
 
 button:hover {
-    color: blueviolet !important;
+    color: white !important;
+    background-color: violet !important;
 }
 
 .AR {

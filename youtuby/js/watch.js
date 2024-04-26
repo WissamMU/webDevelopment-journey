@@ -14,11 +14,11 @@ function read() {
   
     if (dots.style.display === "none") {
       dots.style.display = "inline";
-      btnText.innerHTML = "show more";
+      btnText.innerHTML = "Show more";
       moreText.style.display = "none";
     } else {
       dots.style.display = "none";
-      btnText.innerHTML = "show less";
+      btnText.innerHTML = "Show less";
       moreText.style.display = "inline";
     }
 } 

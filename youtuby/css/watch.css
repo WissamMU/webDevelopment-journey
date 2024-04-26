@@ -29,6 +29,10 @@ time{
 .fa-play{
     left: 46% !important;
 }
+.dropdown-item:hover{
+    color: white;
+    background-color: violet;
+}
 @media (max-width: 1137px){
     #myBtn{
         margin-bottom:60px !important;
