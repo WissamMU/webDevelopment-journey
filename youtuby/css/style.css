@@ -111,6 +111,7 @@ time {
     background-color: white;
     overflow: hidden;
     padding-bottom:150px ;
+    margin-top: 2rem;
 }
 .sidebar:hover{
     overflow-y: scroll;
@@ -245,20 +246,16 @@ time {
 }
 /* ***************************************** */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media(max-width:991px){
+    .sidebar{
+        margin-top: .9rem;
+    }
+}
+@media(min-width:991px){
+    .sidebar{
+        margin-top: 2rem;
+    }
+}
 @media(max-width:991px){
     .navbar .collapse .d-flex{
         display: none;

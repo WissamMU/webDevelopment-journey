@@ -15,7 +15,11 @@
     color: rgb(26, 26, 26) !important;
     cursor: pointer;
 }
-
+.card-img, .card-img-top, .card-img-bottom {
+    height: 100% !important;
+    width: auto !important;
+    margin-right: 1.5rem;
+}
 
 @media(max-width:767px){
     .card-img, .card-img-top, .card-img-bottom {

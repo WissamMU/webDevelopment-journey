@@ -21,4 +21,4 @@ function read() {
       btnText.innerHTML = "show less";
       moreText.style.display = "inline";
     }
-}
+} 

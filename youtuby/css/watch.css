@@ -1,7 +1,6 @@
 .watch-page .watch-icons{
     position: absolute;
     bottom: 5px;
-    left: 20px;
 }
 .watch-icons i:hover{
     cursor: pointer;
