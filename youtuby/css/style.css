@@ -221,7 +221,7 @@ time {
 }
 .card-img, .card-img-top, .card-img-bottom {
     height: 100% !important;
-    width: auto;
+    width: 100% !important;
     margin-right: 1.5rem;
 }
 .card .card-horizontal .card-body p{
@@ -234,7 +234,7 @@ time {
 }
 @media(max-width:767px){
     .card-img, .card-img-top, .card-img-bottom {
-        width: 100%;
+        width: 100%  !important;
     }
     .card .card-horizontal time{
         right: 10px;
@@ -259,15 +259,15 @@ time {
 
 
 
-@media(max-width:1000px){
-    .navbar .collapse .form-inline{
+@media(max-width:991px){
+    .navbar .collapse .d-flex{
         display: none;
     }
     .navbar .search-icon{
         display: inline;
     }
 }
-@media(min-width:1000px){
+@media(min-width:991){
 
     .search-input{
         display: none !important;
