@@ -36,3 +36,24 @@ header .heading-page p{
     width:40%;
     margin: auto;
 }
+header .count-down{
+    width: 60%;
+    margin: 90px auto;
+}
+header .counter{
+    display: inline-block;
+    margin: 0 15px;
+}
+header .count-amount{
+    font-size: 60px;
+    display: block;
+    font-weight: bold;
+    color: #ffce00;
+}
+header .count-period{
+    font-size: 30px;
+    display: block;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 160px;
+}
