@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>الانطلاق قريبا</title>
 </head>
+
 <body>
     <header class="text-center">
         <div class="brand">
@@ -44,6 +46,18 @@
                 <span class="count-amount" id="seconds"></span>
                 <span class="count-period">ثواني</span>
             </div>
+            <div class="send-notification">
+                <p>هل تريد اشعار وقت الانطلاق؟</p>
+                <form class="needs-validation" novalidate>
+                    <div class="input-group">
+                        <input type="email" class="form-control " id="validationCustom01" placeholder="أدخل بريدك الالكتروني" required>
+                        <button type="submit" class="btn"><img src="images/rocket.png" alt="send"></button>
+                        <div class="invalid-feedback">
+                            عذرا يرجى ادخال البريد الالكتروني
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </header>
     <main>
@@ -52,8 +66,9 @@
     <footer>
 
     </footer>
-    
+
     <script src="asset/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/index.js"></script>
 </body>
+
 </html>

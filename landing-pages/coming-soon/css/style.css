@@ -57,3 +57,27 @@ header .count-period{
     color: white;
     margin-bottom: 160px;
 }
+
+header .send-notification p{
+    font-size:18px;
+    color:white;
+}
+header .input-group{
+    width: 60%;
+    margin: auto;
+    transform: translateY(30%);
+}
+header .send-notification .input-group button{
+    background-color: #ffce00;
+    padding: 13px 33px;
+    border-radius: 0 ;
+}
+header .send-notification .input-group input{
+    border-radius: 0;
+    border:2px solid #c7c7c7;
+    text-align: right;
+    font-size: 18px;
+}
+.invalid-feedback{
+    margin-bottom: -30px;
+}
