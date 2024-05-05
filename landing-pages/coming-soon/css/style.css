@@ -168,8 +168,10 @@ footer .social-media{
     background-color: rgba(28,28,28,0.9);
 }
 footer .social-media hr {
-    width: 25%;
+    width: 50%;
     margin: 50px auto 30px;
+    border-top: 2px solid;
+    color: rgba(255, 255, 255, 0.2) !important;
 }
 footer .social-media .list-inline-item a{
     width: 70px;
@@ -186,10 +188,7 @@ footer .social-media .list-inline-item a:hover{
     background-color: #fad32f;
     color:rgba(28,28,28,0.9);
 }
-footer .social-media hr {
-    width: 25%;
-    margin: 50px auto 30px;
-}
+
 
 footer .social-media a.email {
     color: #b4b4b4;
@@ -199,4 +198,70 @@ footer .social-media a.email {
 footer .social-media a.email i {
     color: #ffce00;
     margin-left: 5px;
+}
+
+@media ( max-width: 1200px ) { 
+    .input-group {
+        width: 80% !important;
+    }
+    footer .needs-validation .input-group {
+        width: 50% !important;
+    }
+}
+
+@media (max-width: 992px) {
+    header .heading-page p {
+        width: 70%;
+    }
+
+    .input-group {
+        width: 80% !important;
+    }
+    .footer-notification .input-group {
+        width: 50% !important;
+    }
+
+    section.features .row .d-flex {
+        padding: 15px 10px;
+    }
+
+    section.features .row .d-flex h4 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    header .count-down {
+        width: 80%;
+    }
+}
+@media (max-width: 669px) {
+    header .count-down {
+        width: 50%;
+    }
+    .input-group {
+        width: 100% !important;
+    }
+    .footer-notification h3{
+        width: 80%;
+        margin: auto;
+        line-height: normal;
+    }
+}
+
+@media (max-width: 576px) {
+    header .count-down {
+        width: 70%;
+    }
+    header .heading-page h1 {
+        font-size: 45px;
+    }
+
+    header .heading-page p {
+        width: 90%;
+    }
+
+    .input-group {
+        width: 80% !important;
+    }
 }
