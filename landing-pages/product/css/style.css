@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "cairo-ragular";
+    src: url(../font/Cairo-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "cairo-ragular" , sans-serif;
+}
+header video{
+    max-width: 100%;
+    /* max-height: 100%; */
+    position: fixed;
+    z-index: -1;
+}
+header .overlay{
+    background-color: rgba(255, 255, 255, 0.7);
+}
+header .overlay .brand{
+    padding-top: 40px;
+    padding-right: 50px;
+}
+header .col-md-5 img{
+    width: 100%;
+}
+
+header .header-text {
+    padding-top: 190px;
+}
+header .header-text h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    line-height: 46px;
+    color: rgb(85, 85, 85);
+}
+header .header-text p {
+    font-size: 18px;
+    line-height: 32px;
+    color: rgb(93, 93, 93);
+    margin-bottom: 50px;
+}
+header .header-button a.btn {
+    background-color: rgba(238, 130, 238, 0.815);
+    color: rgb(255, 255, 255);
+    margin-left: 15px;
+    padding: 22px 55px;
+}
+header .header-button a.btn:last-child {
+    color: gray;
+    background: transparent;
+}
