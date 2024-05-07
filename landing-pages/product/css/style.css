@@ -23,7 +23,7 @@ header .overlay .brand{
     padding-top: 40px;
     padding-right: 50px;
 }
-header .col-md-5 img{
+header .product-img img{
     width: 100%;
 }
 
@@ -51,4 +51,32 @@ header .header-button a.btn {
 header .header-button a.btn:last-child {
     color: gray;
     background: transparent;
+}
+
+header .product {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+header .product .product-img img {
+    width: 100%;
+}
+
+header .product .product-label img {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+}
+
+header .product .product-label p {
+    position: absolute;
+    top: -25px;
+    right: 0px;
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+}
+
+header .product .product-label p span {
+    display: block;
 }
