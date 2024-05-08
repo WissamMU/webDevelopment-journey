@@ -85,3 +85,24 @@ header .product .product-label p span {
 #tablet-photo{
     height: 340px;
 }
+section.features{
+    background-color: white;
+    padding: 70px 0;
+}
+section.features .feature-title h2 {
+    font-size: 36px;
+    padding-bottom: 45px;
+    line-height: 32px;
+    color: #555555;
+    position: relative;
+}
+section.features .feature-title h2::after{
+    content: "";
+    width: 150px;
+    height: 2px;
+    background-color: violet;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
