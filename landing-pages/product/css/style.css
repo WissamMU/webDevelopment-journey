@@ -80,3 +80,8 @@ header .product .product-label p {
 header .product .product-label p span {
     display: block;
 }
+
+
+#tablet-photo{
+    height: 340px;
+}
