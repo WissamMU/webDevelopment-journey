@@ -106,3 +106,37 @@ section.features .feature-title h2::after{
     left: 50%;
     transform: translateX(-50%);
 }
+section.features  .media-features .d-flex .flex-grow-1{
+    margin-right: 130px !important;
+}
+section.features  .media-features .d-flex .flex-grow-1:nth-child(2){
+    margin-left: 130px !important;
+}
+section.features  .media-features .d-flex p{ 
+    color: #555555;
+    font-size: 18px;
+}
+section.features  .media-features .d-flex h4 { 
+    color: #6a3093;
+    font-weight: bold !important;
+    font-size: 36px;
+    padding:0 25px;
+    margin: 50px auto ;
+}
+section.features  .media-features .d-flex:nth-child(even) h4 {
+    border-left: 2px solid #6a3093 !important;
+}
+section.features  .media-features .d-flex:nth-child(odd) h4 {
+    border-right: 2px solid #6a3093 !important;
+}
+section.features  .media-features .d-flex {
+    padding: 70px 0;
+    border-bottom: 3px solid #eeeeee;
+}
+section.features  .media-features .d-flex:last-child {
+    border-bottom: 0;
+}
+section.features  .media-features .d-flex:nth-child(even){
+    direction: ltr;
+    margin-right: 0 !important;
+}
