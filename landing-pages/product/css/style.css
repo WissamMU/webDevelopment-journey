@@ -150,27 +150,27 @@ section.prices .prices-text h2{
     margin-bottom: 60px;
     color: #555555;
 }
-.plan-card{
+section.prices .plan-card{
     background-color: white;
     padding: 10px 60px 60px 60px;
     border: 2px solid #ededed;
 }
-.plan-card .title{
+section.prices .plan-card .title{
     color: #a044ff;
     font-size: 18px;
     font-weight: bold;
 }
 
-.plan-card h5{
+section.prices .plan-card h5{
     margin-top: 30px;
     font-size: 48px;
     color: #a9a9ab;
 }
-.plan-card h5 span{
+section.prices .plan-card h5 span{
     font-size: 15px;
     vertical-align: bottom;
 }
-.plan-card ul li{
+section.prices .plan-card ul li{
     list-style: none;
     font-size: 15px;
     padding: 15px;
@@ -201,4 +201,41 @@ section.prices .col-md-6:nth-child(3) .plan-card a.btn {
 }
 section.prices .row{
     align-items: center;
+}
+section.faq {
+    padding: 55px 0;
+    background-color: #fff;
+}
+
+section.faq .faq-title h2 {
+    font-size: 30px;
+    color: #555;
+    margin-bottom: 55px;
+}
+
+section.faq .accordion .accordion-item {
+    margin-bottom: 15px;
+    border: 1px solid #ebebeb;
+    border-radius: 0;
+}
+
+section.faq .accordion .accordion-item button {
+    font-size: 18px;
+    color: #555;
+    font-weight: bold;
+}
+
+section.faq .accordion .accordion-item .accordion-body {
+    font-size: 15px;
+    color: #c9c9c9;
+    line-height: 24px;
+}
+
+section.faq .accordion .accordion-item .accordion-button:not(.collapsed) {
+    background-color: #fff;
+}
+
+section.faq .accordion .accordion-item .accordion-button:focus {
+    border: 0;
+    box-shadow: 0 0 0;
 }
