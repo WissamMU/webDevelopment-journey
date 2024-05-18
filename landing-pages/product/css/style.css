@@ -278,16 +278,19 @@ section.video .overlay button i {
     margin: 0 auto 45px;
 }
 
-section.contact{
+
+
+section.contact {
     padding: 60px 0 40px;
     background-color: #131313;
 }
-section.contact h4{
-    color: #758594;
+
+section.contact h4 {
     font-size: 18px;
-    margin-bottom: 20px;
+    color: #758594;
     line-height: 50px;
 }
+
 section.contact form input,
 section.contact form textarea {
     display: block;
@@ -299,4 +302,55 @@ section.contact form textarea {
     border: none;
     text-align: right;
     width: 90%;
+}
+section.contact form input:focus,
+section.contact form textarea:focus {
+    outline: none !important;
+    background-color: #242424;
+    color: #aeadad;
+}
+section.contact form input::placeholder,
+section.contact form textarea::placeholder{
+    color: #aeadad;
+}
+
+section.contact form button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #a044ff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+}
+
+section.contact form button i {
+    margin-right: 15px;
+}
+
+section.contact form .invalid-feedback {
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
+
+section.contact .blog a.blog-link {
+    text-decoration: none;
+}
+section.contact .blog a.blog-link img{
+    height: 90px !important;
+}
+
+section.contact .blog .d-flex {
+    margin-bottom: 25px;
+}
+
+section.contact .blog h5 {
+    font-size: 18px;
+    color: #aeadad;
+    margin-bottom: 15px;
+}
+
+section.contact .blog p {
+    font-size: 15px;
+    line-height: 20px;
+    color: #737373;
 }
