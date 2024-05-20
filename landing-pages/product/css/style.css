@@ -353,3 +353,31 @@ section.contact .blog p {
     line-height: 20px;
     color: #737373;
 }
+
+footer {
+    background-color: #1d1d1d;
+    padding: 25px 0;
+}
+
+footer .list-inline .list-inline-item a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    color: #1d1d1d;
+    background-color: #758594;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.5s all ease;
+}
+
+footer .list-inline .list-inline-item a:hover {
+    background-color: #1479ec;
+}
+
+footer .copyright p {
+    font-size: 15px;
+    color: #919191;
+    text-align: left;
+}
+
