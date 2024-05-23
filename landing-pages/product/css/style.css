@@ -3,51 +3,60 @@
     src: url(../font/Cairo-Regular.ttf);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 body {
-    font-family: "cairo-ragular" , sans-serif;
+    font-family: "cairo-ragular", sans-serif;
 }
-header video{
+
+header video {
     max-width: 100%;
     /* max-height: 100%; */
     position: fixed;
     z-index: -1;
 }
-header .overlay{
+
+header .overlay {
     background-color: rgba(255, 255, 255, 0.7);
 }
-header .overlay .brand{
+
+header .overlay .brand {
     padding-top: 40px;
     padding-right: 50px;
 }
-header .product-img img{
+
+header .product-img img {
     width: 100%;
 }
 
 header .header-text {
     padding-top: 190px;
 }
+
 header .header-text h2 {
     font-size: 36px;
     margin-bottom: 40px;
     line-height: 46px;
     color: rgb(85, 85, 85);
 }
+
 header .header-text p {
     font-size: 18px;
     line-height: 32px;
     color: rgb(93, 93, 93);
     margin-bottom: 50px;
 }
+
 header .header-button a.btn {
     background-color: rgba(238, 130, 238, 0.815);
     color: rgb(255, 255, 255);
     margin-left: 15px;
     padding: 22px 55px;
 }
+
 header .header-button a.btn:last-child {
     color: gray;
     background: transparent;
@@ -82,13 +91,15 @@ header .product .product-label p span {
 }
 
 
-#tablet-photo{
+#tablet-photo {
     height: 340px;
 }
-section.features{
+
+section.features {
     background-color: white;
     padding: 70px 0 30px 0;
 }
+
 section.features .feature-title h2 {
     font-size: 36px;
     padding-bottom: 45px;
@@ -96,7 +107,8 @@ section.features .feature-title h2 {
     color: #555555;
     position: relative;
 }
-section.features .feature-title h2::after{
+
+section.features .feature-title h2::after {
     content: "";
     width: 150px;
     height: 2px;
@@ -106,76 +118,91 @@ section.features .feature-title h2::after{
     left: 50%;
     transform: translateX(-50%);
 }
-section.features  .media-features .d-flex .flex-grow-1{
-    margin-right: 130px !important;
+
+section.features .media-features .d-flex .flex-grow-1 {
+    margin-right: 130px;
 }
-section.features  .media-features .d-flex .flex-grow-1:nth-child(2){
-    margin-left: 130px !important;
+
+section.features .media-features .d-flex .flex-grow-1:nth-child(2) {
+    margin-left: 130px;
 }
-section.features  .media-features .d-flex p{ 
+
+section.features .media-features .d-flex p {
     color: #555555;
     font-size: 18px;
 }
-section.features  .media-features .d-flex h4 { 
+
+section.features .media-features .d-flex h4 {
     color: #6a3093;
     font-weight: bold !important;
     font-size: 36px;
-    padding:0 25px;
-    margin: 50px auto ;
+    padding: 0 25px;
+    margin: 50px auto;
 }
-section.features  .media-features .d-flex:nth-child(even) h4 {
+
+section.features .media-features .d-flex:nth-child(even) h4 {
     border-left: 2px solid #6a3093 !important;
 }
-section.features  .media-features .d-flex:nth-child(odd) h4 {
+
+section.features .media-features .d-flex:nth-child(odd) h4 {
     border-right: 2px solid #6a3093 !important;
 }
-section.features  .media-features .d-flex {
+
+section.features .media-features .d-flex {
     padding: 70px 0;
     border-bottom: 3px solid #eeeeee;
 }
-section.features  .media-features .d-flex:last-child {
+
+section.features .media-features .d-flex:last-child {
     border-bottom: 0;
 }
-section.features  .media-features .d-flex:nth-child(even){
+
+section.features .media-features .d-flex:nth-child(even) {
     direction: ltr;
     margin-right: 0 !important;
 }
 
-#prices{
-    background-color:#f7f7f7;
+#prices {
+    background-color: #f7f7f7;
     padding: 60px 0 !important;
 }
-section.prices .prices-text h2{
-    font-size: 30px ;
+
+section.prices .prices-text h2 {
+    font-size: 30px;
     margin-bottom: 60px;
     color: #555555;
 }
-section.prices .plan-card{
+
+section.prices .plan-card {
     background-color: white;
     padding: 10px 60px 60px 60px;
     border: 2px solid #ededed;
 }
-section.prices .plan-card .title{
+
+section.prices .plan-card .title {
     color: #a044ff;
     font-size: 18px;
     font-weight: bold;
 }
 
-section.prices .plan-card h5{
+section.prices .plan-card h5 {
     margin-top: 30px;
     font-size: 48px;
     color: #a9a9ab;
 }
-section.prices .plan-card h5 span{
+
+section.prices .plan-card h5 span {
     font-size: 15px;
     vertical-align: bottom;
 }
-section.prices .plan-card ul li{
+
+section.prices .plan-card ul li {
     list-style: none;
     font-size: 15px;
     padding: 15px;
     color: #a9a9ab;
 }
+
 section.prices .plan-card a.btn {
     border: 2px solid #7233a2;
     background-color: #fff;
@@ -199,9 +226,11 @@ section.prices .col-md-6:nth-child(3) .plan-card a.btn {
     background-color: #7233a2;
     color: #fff;
 }
-section.prices .row{
+
+section.prices .row {
     align-items: center;
 }
+
 section.faq {
     padding: 55px 0;
     background-color: #fff;
@@ -240,11 +269,12 @@ section.faq .accordion .accordion-item .accordion-button:focus {
     box-shadow: 0 0 0;
 }
 
-section.video{
+section.video {
     min-height: 100vh;
     position: relative;
     overflow: hidden !important;
 }
+
 section.video video {
     min-height: 100%;
     min-width: 100%;
@@ -252,13 +282,15 @@ section.video video {
     left: 0;
     position: absolute;
 }
-section.video .overlay{
-    background-color: rgba(130,77,178,0.9);
+
+section.video .overlay {
+    background-color: rgba(130, 77, 178, 0.9);
     min-height: 100%;
     position: absolute;
     inset: 0;
 }
-section.video .overlay button{
+
+section.video .overlay button {
     position: absolute;
     bottom: 50%;
     right: 50%;
@@ -266,8 +298,9 @@ section.video .overlay button{
     color: white;
     background-color: transparent;
     border: 0;
-    transform: translate(50% , 50%);
+    transform: translate(50%, 50%);
 }
+
 section.video .overlay button i {
     display: block;
     width: 90px;
@@ -303,14 +336,16 @@ section.contact form textarea {
     text-align: right;
     width: 90%;
 }
+
 section.contact form input:focus,
 section.contact form textarea:focus {
     outline: none !important;
     background-color: #242424;
     color: #aeadad;
 }
+
 section.contact form input::placeholder,
-section.contact form textarea::placeholder{
+section.contact form textarea::placeholder {
     color: #aeadad;
 }
 
@@ -334,7 +369,8 @@ section.contact form .invalid-feedback {
 section.contact .blog a.blog-link {
     text-decoration: none;
 }
-section.contact .blog a.blog-link img{
+
+section.contact .blog a.blog-link img {
     height: 90px !important;
 }
 
@@ -383,39 +419,36 @@ footer .copyright p {
 
 
 
-@media (max-width: 1400px){
-    header .header-text{
+@media (max-width: 1400px) {
+    header .header-text {
         padding-top: 90px;
     }
+    section#prices .plan-card a.btn{
+        display: ruby;
+    }
 }
-@media (max-width:1199px){
-    header .header-text{
-        padding: 30px 0 ;
+
+@media (max-width:1200px) {
+    header .header-text {
+        padding: 30px 0;
+    }
+    section.features .media-features .d-flex .flex-grow-1{
+        margin: auto 10px !important;
     }
 }
 
 @media (max-width: 992px) {
-    header .header-text{
-        padding: 10px 0 ;
-    }
-} 
-
-@media (max-width: 768px) {
-    header .overlay .product {
-        margin-top: 100px;
+    header .header-text {
+        padding: 10px 0;
     }
 
-    header .overlay .product .product-label img {
-        right: 50%;
-        transform: translateX(50%);
-    }
-    
-    header .overlay .product .product-label p {
-        right: 50%;
-        transform: translateX(50%);
+    section.features .media-features .d-flex .flex-grow-1 {
+        margin: auto 0 auto 0 !important;
+
     }
 
-    section.features .media-feature .d-flex {
+    section.features .media-features .d-flex {
+
         flex-flow: column;
         text-align: center;
     }
@@ -428,6 +461,25 @@ footer .copyright p {
     section.features .media-feature .d-flex h4 {
         border: none !important;
     }
+}
+
+
+
+
+@media (max-width: 768px) {
+    header .overlay .product {
+        margin-top: 100px;
+    }
+
+    header .overlay .product .product-label img {
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    header .overlay .product .product-label p {
+        right: 50%;
+        transform: translateX(50%);
+    }
 
     section.contact h4 {
         margin-top: 25px;
@@ -438,7 +490,7 @@ footer .copyright p {
     footer {
         text-align: center;
     }
- 
+
     footer .copyright p {
         text-align: center;
     }
