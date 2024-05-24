@@ -1,7 +1,17 @@
-*{
-    padding: 0;
-    margin: 0;
+@font-face {
+    font-family: "cairo-ragular";
+    src: url(../font/Cairo-Regular.ttf);
 }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "cairo-ragular", sans-serif;
+}
+
 header {
     background-image: url(../images/bg.jpg);
     background-size: cover;
