@@ -1,0 +1,13 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header {
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+header .overlay{
+    background: linear-gradient(to right,#59c1c4d3,#d1d55bc9);
+    min-height: 100vh;
+}
