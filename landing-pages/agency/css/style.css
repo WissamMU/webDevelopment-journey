@@ -17,10 +17,7 @@ header {
     background-size: cover;
     background-position: center;
 }
-header .overlay{
-    background: linear-gradient(to right,#59c1c4d3,#d1d55bc9);
-    min-height: 100vh;
-}
+
 nav.navbar {
     z-index: 15;
 }
@@ -52,4 +49,46 @@ nav.navbar.noTransparrent .navbar-nav .nav-item a.nav-link.active{
 }
 nav.navbar.noTransparrent button.navbar-toggler{
     color: #16aeca;
+}
+
+
+header .overlay {
+    background: linear-gradient(to right, rgba(46, 178, 181, 0.8), rgba(197, 203, 50, 0.8));
+    min-height: 100vh;
+}
+
+header .overlay .carousel .carousel-item {
+    min-height: 100vh;
+    position: relative;
+}
+
+header .overlay .carousel .carousel-item .carousel-content {
+    position: absolute;
+    top: 40%;
+    right: 15%;
+    left: 15%;
+    text-align: center;
+    z-index: 10;
+}
+
+header .overlay .carousel .carousel-item .carousel-content h2 {
+    font-size: 40px;
+    line-height: 52px;
+    margin-bottom: 60px;
+    color: #fff;
+}
+
+header .overlay .carousel .carousel-item .carousel-content a {
+    padding: 13px 47px;
+    background-color: #16aeca;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+header .overlay .carousel .carousel-item .carousel-content a:hover {
+    background-color: #dae413;
+    color: #555;
 }
