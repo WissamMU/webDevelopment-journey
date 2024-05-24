@@ -11,9 +11,9 @@
     <title>صفحة شركة</title>
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar-example2">
     <header>
-        <nav class="navbar navbar-expand-lg  fixed-top  ">
+        <nav class="navbar navbar-expand-lg  fixed-top" id="navbar">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="images/logo.png" alt="logo">
@@ -24,27 +24,29 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">خدمات الشركة</a>
+                            <a class="nav-link active " aria-current="page" href="#services">خدمات الشركة</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">المشاريع السابقة</a>
+                            <a class="nav-link" href="#gallery">المشاريع السابقة</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">احصائيات الشركة</a>
+                            <a class="nav-link" href="#statistics">احصائيات الشركة</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">تواصل معنا</a>
+                            <a class="nav-link " href="#contacts" >تواصل معنا</a>
                         </li>
                 </div>
             </div>
         </nav>
-
-
         <div class="overlay">
 
         </div>
     </header>
     <main>
+        <section class="services" id="services" style="height: 1500px; padding-top: 300px;"></section>
+        <section class="gallery" id="gallery" style="height: 1500px; padding-top: 300px;"></section>
+        <section class="statistics" id="statistics" style="height: 1500px; padding-top: 300px;"></section>
+        <section class="contacts" id="contacts" style="height: 1500px; padding-top: 300px;"></section>
 
     </main>
     <footer>

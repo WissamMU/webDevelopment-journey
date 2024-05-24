@@ -21,3 +21,35 @@ header .overlay{
     background: linear-gradient(to right,#59c1c4d3,#d1d55bc9);
     min-height: 100vh;
 }
+nav.navbar {
+    z-index: 15;
+}
+nav.navbar .navbar-brand img{
+    width: 80%;
+}
+nav.navbar .navbar-nav .nav-item a.nav-link{
+    font-size: 16px;
+    color: #e8e8e8;
+    line-height: 40px;
+    padding: 0 16px;
+}
+nav.navbar .navbar-nav .nav-item a.nav-link:hover,
+nav.navbar .navbar-nav .nav-item a.nav-link.active{
+    background-color: #e8e8e8;
+    color: #16aeca;
+}
+nav.navbar.noTransparrent{
+    background-color: white;
+    border: 1px solid #eee;
+}
+nav.navbar.noTransparrent .nav-item a.nav-item{
+    color: #16aeca;
+}
+nav.navbar.noTransparrent .navbar-nav .nav-item a.nav-link:hover,
+nav.navbar.noTransparrent .navbar-nav .nav-item a.nav-link.active{
+    color: #dfe44ec9;
+    background-color: #16aeca;
+}
+nav.navbar.noTransparrent button.navbar-toggler{
+    color: #16aeca;
+}
