@@ -92,3 +92,34 @@ header .overlay .carousel .carousel-item .carousel-content a:hover {
     background-color: #dae413;
     color: #555;
 }
+
+section.services .services-title h3{
+    padding-top: 75px;
+    font-size: 40px;
+}
+section.services .container .card{
+    margin-top: 50px;
+    height: 330px;
+    padding: 50px;
+    margin-bottom: 20px;
+    transition: all 1s ease-in-out;
+}
+section.services .container .card:hover {
+    height: 400px;
+}
+
+section.services .container .card .card-block h4{
+    padding: 25px ;
+    font-size: 24px;
+}
+section.services .container .card .card-block p{
+    font-size: 15px;
+    text-align: 21px;
+    color: #919191;
+    opacity: 0;
+    transition: all 1.5s ease;
+}
+
+section.services .card:hover .card-block p {
+    opacity: 1;
+}
