@@ -93,6 +93,9 @@ header .overlay .carousel .carousel-item .carousel-content a:hover {
     color: #555;
 }
 
+section.services {
+    min-height: 700px;
+}
 section.services .services-title h3{
     padding-top: 75px;
     font-size: 40px;
@@ -122,4 +125,116 @@ section.services .container .card .card-block p{
 
 section.services .card:hover .card-block p {
     opacity: 1;
+}
+
+section.gallery .gallery-title h3 {
+    font-size: 40px;
+    color: #070c0c;
+    margin-bottom: 60px;
+}
+
+section.gallery .gallery-work a.gallery-link {
+    position: relative;
+    display: block;
+}
+
+section.gallery .gallery-work .gallery-link img {
+    width: 100%;
+}
+
+section.gallery .gallery-work .gallery-link .gallery-hover {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    left: 5%;
+    color: #fff;
+    background-color: rgba(22, 174, 202, 0.9);
+    z-index: 5;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+section.gallery .gallery-work .gallery-link .gallery-hover i {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    font-size: 36px;
+    transform: translate(50%, 50%);
+}
+
+section.gallery .gallery-work .gallery-link:hover .gallery-hover {
+    opacity: 1;
+}
+
+section.gallery .gallery-work .gallery-overlay {
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 30;
+    padding: 5% 10%;
+    opacity: 0;
+    margin-top: -100vh;
+    transition: all 1s ease;
+}
+
+section.gallery .gallery-work .gallery-overlay:target {
+    opacity: 1;
+    margin-top: 0;
+}
+
+section.gallery .gallery-work .gallery-overlay .overlay-img img {
+    width: 100%;
+}
+
+section.gallery .gallery-overlay .overlay-text {
+    margin-top: 50px;
+}
+
+section.gallery .gallery-overlay .overlay-text h4 {
+    font-size: 36px;
+    line-height: 52px;
+    color: #16aeca;
+    margin-bottom: 30px;
+}
+
+section.gallery .gallery-overlay .overlay-text ul {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #efefef;
+}
+
+section.gallery .gallery-overlay .overlay-text li a {
+    color: #555;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+section.gallery .gallery-overlay .overlay-text p {
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 50px;
+    color: #919191;
+}
+
+section.gallery .gallery-overlay .overlay-text a.btn {
+    font-size: 20px;
+    line-height: 50px;
+    border-radius: 25px;
+    padding: 0 30px;
+    background-color: #16aeca;
+    color: #fff;
+}
+
+section.gallery .gallery-overlay .overlay-text a.close {
+    color: #16aeca;
+    position: absolute;
+    top: 4%;
+    left: 10%;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
 }
