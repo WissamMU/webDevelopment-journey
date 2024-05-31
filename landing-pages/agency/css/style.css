@@ -239,3 +239,26 @@ section.gallery .gallery-overlay .overlay-text a.close {
     text-decoration: none;
 }
 
+section.statistics {
+    background-image: url(../images/bg-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed ;
+}
+section.statistics .overlay {
+    background-color: rgba(22, 174, 202, 0.8);
+    padding: 140px 0 100px;
+}
+
+section.statistics .overlay .count {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ddfaff;
+    margin: 50px auto 30px;
+}
+
+section.statistics .overlay span.counter {
+    font-size: 18px;
+    line-height: 22px;
+    color: #85ecff;
+}
