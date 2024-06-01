@@ -262,3 +262,66 @@ section.statistics .overlay span.counter {
     line-height: 22px;
     color: #85ecff;
 }
+
+section.contacts {
+    padding: 100px 0 60px;
+}
+section.contacts .map iframe{
+    height: 200;
+    width: 570px;
+}
+section.contacts .contact-addresses h4{
+    font-size: 24px;
+    color: #181c1c;
+    margin-bottom: 40px;
+}
+section.contacts .contact-addresses ul{
+    list-style: none ;
+    padding: 0 !important;
+}
+section.contacts .contact-addresses ul li{
+    color: #16aeca;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+section.contacts .contact-addresses ul li address{
+    display: inline;
+}
+
+
+section.contacts .contact-text {
+    margin: 50px auto 20px;
+}
+
+section.contacts .contact-text h3 {
+    font-size: 24px;
+    color: #181c1c;
+    font-weight: bold;
+}
+
+section.contacts .contact-form {
+    width: 60%;
+    margin: auto;
+}
+
+section.contacts .contact-form input,
+section.contacts .contact-form textarea {
+    background-color: #f7f7f7;
+    border: 2px solid #ececec;
+    color: #5c5c5c;
+    font-size: 15px;
+    line-height: 25px;
+    border-radius: 3px;
+    text-align: right;
+}
+section.contacts .contact-form button {
+    background-color: #16aeca;
+    font-size: 15px;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 3px;
+    width: auto;
+    margin-right: 12px;
+    border: 0;
+}
