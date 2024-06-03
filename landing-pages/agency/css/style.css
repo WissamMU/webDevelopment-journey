@@ -370,7 +370,7 @@ footer .top-footer ul a {
     transition: all 0.5s ease;
 }
 
-footer.footer .top-footer .about-us ul a:hover {
+footer.footer .top-footer ul a:hover {
     background-color: #16aeca;
     color: #fff;
 }
@@ -406,4 +406,55 @@ footer.footer .copyright p {
     font-size: 15px;
     color: #acacac;
     text-align: center;
+}
+
+
+
+
+@media (max-width: 1200px) {
+    section.services .card {
+        padding: 20px;
+        height: 400px;
+    }
+
+    section.services .card .card-img {
+        margin-bottom: 35px;
+    }
+
+    section.services .card .card-block h4 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    section.services .card .card-block p {
+        opacity: 1;
+    }
+
+    section.contacts .map iframe {
+        width: 100%;
+    }
+
+    section.contacts .contact-form {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    section.gallery .gallery-work .gallery-overlay {
+        margin-top: -170vh;
+    }
+
+    section.gallery .gallery-work .gallery-overlay .overlay-img {
+        display: none;
+    }
+
+    section.contacts .map {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    header .overlay .carousel button {
+        display: none;
+    }
 }
