@@ -39,3 +39,5 @@ window.onload = function () {
             }, false)
         })
 })();
+
+document.getElementById("fullYear").innerHTML = new Date().getFullYear();
