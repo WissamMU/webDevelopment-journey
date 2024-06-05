@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header.header {
+    background-image: url(../images/bg-3.png);
+    background-position: center ;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header.header .overlay .header-text h5{
+    color: white;
+    font-size: 30px;
+    line-height: 38px;
+    margin: 60px auto;
+}
+header.header .overlay .header-text p{
+    font-size: 18px;
+    color: white;
+    line-height: 33px;
+    margin-bottom: 85px;
+}
+header.header .overlay .header-button img{
+    width: 250px;
+    height: 80px !important;
+}
