@@ -48,3 +48,45 @@ header.header .overlay .header-img img {
     position: absolute;
     bottom: -120px;
 }
+
+main section.feature{
+    background-color: white ;
+    padding: 75px  0;
+    position: relative;
+}
+main section.feature .text-left{
+    direction: ltr;
+}
+main section.feature .features .d-flex{
+    margin-bottom: 70px;
+}
+main section.feature .features .d-flex .flex-shrink-0 i {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    color: white;
+    background-color: #ef473a;
+    text-align: center;
+    display: block;
+    border-radius: 2px;
+}
+section.feature .features .d-flex h5 {
+    font-size: 24px;
+    color: #080808;
+    margin-bottom: 12px;
+}
+
+section.feature .features .d-flex p {
+    font-size: 15px;
+    line-height: 20px;
+    color: #757474;
+}
+
+section.feature .feature-img img {
+    width: 80%;
+}
+
+section.feature .features {
+    margin-top: 90px;
+}
+
