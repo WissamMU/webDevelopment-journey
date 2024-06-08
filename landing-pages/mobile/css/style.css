@@ -11,55 +11,65 @@ body {
 
 header.header {
     background-image: url(../images/bg-3.png);
-    background-position: center ;
+    background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
-header.header .container{
+
+header.header .container {
     max-width: 1100px;
 }
-header.header .overlay{
+
+header.header .overlay {
     background-color: rgba(239, 71, 58, 0.8);
     padding-top: 90px;
     position: relative;
 }
-header.header .overlay .header-text{
+
+header.header .overlay .header-text {
     margin-top: 110px;
 }
-header.header .overlay .header-text h5{
+
+header.header .overlay .header-text h5 {
     color: white;
     font-size: 30px;
     line-height: 38px;
     margin: 60px auto;
 }
-header.header .overlay .header-text p{
+
+header.header .overlay .header-text p {
     font-size: 18px;
     color: white;
     line-height: 33px;
     margin-bottom: 85px;
 }
-header.header .overlay .header-button img{
+
+header.header .overlay .header-button img {
     width: 250px;
     height: 80px !important;
     margin-bottom: 120px;
 }
+
 header.header .overlay .header-img img {
     max-width: 100%;
     position: absolute;
     bottom: -120px;
 }
 
-main section.feature{
-    background-color: white ;
-    padding: 75px  0;
+main section.feature {
+    background-color: white;
+    padding: 75px 0;
     position: relative;
 }
-main section.feature .text-left{
+
+main section.feature .text-left {
     direction: ltr;
 }
-main section.feature .features .d-flex{
+
+main section.feature .features .d-flex {
     margin-bottom: 70px;
 }
+
 main section.feature .features .d-flex .flex-shrink-0 i {
     width: 70px;
     height: 70px;
@@ -70,6 +80,7 @@ main section.feature .features .d-flex .flex-shrink-0 i {
     display: block;
     border-radius: 2px;
 }
+
 section.feature .features .d-flex h5 {
     font-size: 24px;
     color: #080808;
@@ -90,3 +101,34 @@ section.feature .features {
     margin-top: 90px;
 }
 
+section.option {
+    padding-top: 120px;
+    background-color: #f9f8f8;
+    position: relative;
+}
+
+section.option .options {
+    margin-top: 40px;
+    margin-right: 40px;
+}
+
+section.option .options .d-flex {
+    margin-bottom: 60px;
+}
+
+section.option .options .d-flex h5 {
+    font-size: 24px;
+    line-height: 40px;
+    color: #141414;
+}
+
+section.option .options .d-flex p {
+    font-size: 15px;
+    line-height: 20px;
+    color: #757474;
+}
+
+section.option .option-img {
+    position: absolute;
+    bottom: -150px;
+}
