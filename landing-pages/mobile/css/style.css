@@ -132,3 +132,38 @@ section.option .option-img {
     position: absolute;
     bottom: -150px;
 }
+
+section.slider{
+    position: relative;
+    padding: 80px 0;
+    background-color: white;
+}
+section.slider .slider-text h4{
+    font-size: 36px;
+    margin-bottom: 60px;
+}
+section.slider .slider-carousel .carousel-inner {
+    width: 60%;
+    margin: auto;
+}
+section.slider .slider-carousel .carousel-control-prev,
+section.slider .slider-carousel .carousel-control-next {
+    width: 70px;
+    height: 70px;
+    border: 1px solid #ef473a;
+    border-radius: 50%;
+    color: #ef473a;
+    margin: auto ;
+}
+section.slider .slider-carousel .carousel-indicators {
+    bottom: -60px;
+}
+section.slider .slider-carousel .carousel-indicators button {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ef473a;
+    border-radius: 50%;
+}
+section.slider .slider-carousel .carousel-indicators button.active {
+    background-color: #ef473a;
+}
