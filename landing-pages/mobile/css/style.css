@@ -333,6 +333,10 @@ footer.footer .top-footer .widget form .invalid-feedback {
 }
 
 
+footer.footer .copyright p {
+    margin-bottom: 0 !important;
+
+}
 footer.footer .copyright {
     font-size: 15px;
     color: #565656;
