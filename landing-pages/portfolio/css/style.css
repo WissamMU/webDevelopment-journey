@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "cairo-ragular";
+    src: url(../font/Cairo-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "cairo-ragular", sans-serif;
+}
+nav.navbar .navbar-nav li a.nav-link {
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 2px;
+    padding-right: 24px;
+    padding-left: 24px;
+    transition: all .5s ease;
+}
+
+nav.navbar .navbar-nav li a.nav-link:hover,
+nav.navbar .navbar-nav li a.nav-link.active {
+    color: #0575e6;
+    background-color: #fff;
+}
+
+nav.navbar.noTransparent {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+nav.navbar.noTransparent .navbar-nav li a.nav-link {
+    color: #0575e6;
+}
+
+nav.navbar.noTransparent .navbar-nav li a.nav-link:hover,
+nav.navbar.noTransparent .navbar-nav li a.nav-link.active {
+    color: #fff;
+    background-color: #0575e6;
+}
+
+header.header {
+    background-image: url(../images/bg-1.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 540px;
+}
