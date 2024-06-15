@@ -11,6 +11,7 @@
 body {
     font-family: "cairo-ragular", sans-serif;
 }
+
 nav.navbar .navbar-nav li a.nav-link {
     color: #fff;
     font-size: 16px;
@@ -47,4 +48,57 @@ header.header {
     background-size: cover;
     background-position: center;
     min-height: 540px;
+}
+
+header.header .overlay {
+    background-color: rgba(5, 117, 230, 0.9);
+    color: white;
+    max-width: 975px;
+    padding: 40px 60px;
+    transform: translateY(20%);
+    margin: auto;
+}
+
+header.header .personel img {
+    border: solid 4px #74ade8;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+header.header .overlay h1 {
+    font-size: 36px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    color: #f9f9f9;
+}
+
+header.header .overlay h1 span {
+    font-size: 24px;
+}
+
+header.header .overlay ul li a {
+    font-size: 24px;
+    color: #021b79;
+}
+
+header.header .overlay h2 {
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+header.header .overlay p {
+    font-size: 15px;
+    line-height: 30px;
+    color: #89c4ff;
+    margin-bottom: 40px;
+}
+
+header.header .overlay a.cv {
+    font-size: 18px;
+    line-height: 32px;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 40px;
 }
