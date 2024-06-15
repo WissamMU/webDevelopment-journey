@@ -102,3 +102,130 @@ header.header .overlay a.cv {
     text-decoration: none;
     margin-bottom: 40px;
 }
+
+section.licence {
+    padding: 200px 0 80px;
+    background-color: #f6fbff;
+}
+
+section.licence .licence-title {
+    padding-bottom: 30px;
+}
+
+section.licence .licence-title h2 {
+    color: #196dd1;
+    font-size: 30px;
+    line-height: 50px;
+}
+
+
+section.licence .licence-title h2::after {
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: #196dd1;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+section.licence ul.timeline {
+    padding-right: 0;
+    padding-top: 45px;
+    list-style: none;
+    position: relative;
+}
+
+section.licence ul.timeline {
+    display: block;
+}
+
+section.licence ul.timeline::before {
+    content: "";
+    width: 2px;
+    height: 74%;
+    position: absolute;
+    top: 0;
+    right: 50%;
+    background: #196dd1;
+    transform: translateX(50%);
+}
+
+section.licence ul.timeline li .timebox {
+    border: solid 2px #f4f4f5;
+    background-color: #fff;
+    padding: 20px 25px;
+    max-width: 45%;
+    position: relative;
+}
+
+section.licence ul.timeline li .timebox h4 span {
+    background-color: #0575e6;
+    color: white;
+    padding: 0 5px;
+    border-radius: 2px;
+    margin-left: 25px;
+}
+
+section.licence ul.timeline li .timebox h4 {
+    font-size: 18px;
+    line-height: 30px;
+    color: #555;
+}
+
+section.licence ul.timeline li .timebox p {
+    color: #b1b1b1;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+
+section.licence ul.timeline li .timebox::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    position: absolute;
+    border-left: 2px solid #f4f4f5;
+    border-bottom: 2px solid #f4f4f5;
+    top: 5%;
+    left: -10px;
+    transform: rotate(45deg);
+}
+
+section.licence ul.timeline li {
+    position: relative;
+    margin-bottom: -50px;
+}
+
+section.licence ul.timeline li::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #196dd1;
+    position: absolute;
+    top: 10%;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+section.licence ul.timeline li:nth-child(even) {
+    direction: ltr;
+    text-align: left;
+}
+
+section.licence ul.timeline li:nth-child(even) .timebox::after {
+    border: 0;
+    left: auto;
+    right: -10px;
+    border-right: 2px solid #f4f4f5;
+    border-top: 2px solid #f4f4f5;
+}
+
+section.licence ul.timeline li:nth-child(even) .timebox h4 span {
+    float: left;
+    margin-left: 0;
+    margin-right: 25px;
+}
