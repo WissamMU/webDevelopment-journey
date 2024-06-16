@@ -339,3 +339,111 @@ section.gallery .gallery-work input.item-type-3:checked~.items .item:not(.item-t
     transform: scale(0.8);
     opacity: 0.5;
 }
+
+section.contacts {
+    background-image: url(../images/bg-3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+section.contacts .overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-top: 70px;
+}
+
+section.contacts .overlay .testimonials-title h3 {
+    font-size: 30px;
+    line-height: 50px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+section.contacts .overlay .testimonials .slider {
+    width: 65%;
+    margin: 0 auto 80px;
+}
+
+section.contacts .overlay .testimonials .slider .carousel-item {
+    min-height: 350px;
+}
+
+section.contacts .overlay .testimonials .slider .carousel-item .carousel-caption {
+    background-color: #fff;
+    width: 100%;
+    padding: 80px 70px 35px;
+    right: 0;
+}
+
+section.contacts .overlay .testimonials .slider .carousel-item .carousel-caption img {
+    position: absolute;
+    top: 0;
+    transform: translate(50%, -50%);
+}
+
+section.contacts .overlay .testimonials .slider .carousel-caption h4 {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+section.contacts .overlay .testimonials .slider .carousel-caption h4 span {
+    font-size: 15px;
+    color: #9c9c9c;
+}
+
+section.contacts .overlay .testimonials .slider .carousel-caption p {
+    font-size: 15px;
+    line-height: 22px;
+    color: #b1b1b1;
+    margin-bottom: 25px;
+}
+
+section.contacts .overlay .testimonials .slider .carousel-caption li a {
+    font-size: 24px;
+    color: #b2d8fe;
+    transition: all .5s ease;
+}
+
+section.contacts .overlay .testimonials .slider .carousel-caption li a:hover {
+    color: #0575e6;
+}
+
+section.contacts .overlay .testimonials .slider .carousel .carousel-indicators {
+    bottom: -5px;
+}
+
+section.contacts .overlay .testimonials .slider .carousel .carousel-indicators button {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #0575e6;
+    background-color: #fff;
+}
+
+section.contacts .overlay .testimonials .slider .carousel .carousel-indicators button.active {
+    background-color: #0575e6;
+}
+
+section.contacts .overlay .testimonials .carousel .carousel-control-next i,
+section.contacts .overlay .testimonials .carousel .carousel-control-prev i {
+    padding: 10px 20px;
+    background-color: #0575e6;
+    border-radius: 50%;
+}
+
+section.contacts .overlay .testimonials .carousel .carousel-control-next {
+    transform: translateX(-50%);
+}
+
+section.contacts .overlay .testimonials .carousel .carousel-control-prev {
+    transform: translateX(50%);
+}
+
+
+
+
+
+.copyright p {
+    font-size: 15px;
+    color: #919191;
+    text-align: center;
+}

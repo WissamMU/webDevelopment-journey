@@ -15,3 +15,5 @@ $(document).ready(function () {
         $(this).find('span').html(Math.round(stepValue * 100) + '%');
     });
 });
+
+document.getElementById("fullYear").innerHTML = new Date().getFullYear();
