@@ -108,16 +108,17 @@ section.licence {
     background-color: #f6fbff;
 }
 
+
 section.licence .licence-title {
     padding-bottom: 30px;
+    position: relative;
 }
 
 section.licence .licence-title h2 {
-    color: #196dd1;
     font-size: 30px;
     line-height: 50px;
+    color: #196dd1;
 }
-
 
 section.licence .licence-title h2::after {
     content: "";
@@ -129,6 +130,7 @@ section.licence .licence-title h2::after {
     right: 50%;
     transform: translateX(50%);
 }
+
 
 section.licence ul.timeline {
     padding-right: 0;
@@ -228,4 +230,43 @@ section.licence ul.timeline li:nth-child(even) .timebox h4 span {
     float: left;
     margin-left: 0;
     margin-right: 25px;
+}
+
+section.statistics {
+    background-image: url(../images/bg-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+section.statistics .overlay {
+    background-color: rgba(5, 117, 230, 0.7);
+    padding: 150px 0;
+}
+
+section.statistics .overlay .stat p {
+    font-family: sans-serif;
+    font-size: 24px;
+    color: white;
+    line-height: 30px;
+    margin-top: 30px;
+}
+
+section.statistics .overlay .stat .circle canvas {
+    background-color: #eef6ff;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+section.statistics .overlay .stat .circle {
+    position: relative;
+}
+
+section.statistics .overlay .stat .circle span {
+    position: absolute;
+    color: #0575e6;
+    font-size: 24px;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
 }
