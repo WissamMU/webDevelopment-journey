@@ -369,9 +369,60 @@
                             </div>
                         </div>
                     </div>
-                    <div class="contact-info">
-
-                    </div>
+                    <div class="contact-info" id="contact-info">
+                        <div class="contact-title text-center">
+                            <h3>تواصل معي</h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <form class="contact-form row" id="contactForm">
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control" name="name" placeholder="الاسم"
+                                            required>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="email" class="form-control" name="email"
+                                            placeholder="البريد الإلكتروني" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea class="form-control" rows="5"
+                                            placeholder="نص الرسالة أو تفاصيل المشروع" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn">إرسال</button>
+                                </form>
+                            </div>
+                            <div class="col-md-4">
+                                <ul class="contact-us list-unstyled">
+                                    <li>
+                                        <i class="fas fa-phone"></i>
+                                        012 3456 7890
+                                    </li>
+                                    <li>
+                                        <i class="far fa-envelope"></i>
+                                        email@example
+                                    </li>
+                                </ul>
+                                <hr>
+                                <ul class="social list-inline">
+                                    <li class="list-inline-item">
+                                        <a href="">
+                                            <i class="fab fa-google-plus-g"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>  
                     <div class="copyright">
                         <p>جميع الحقوق محفوظة <span id="fullYear"></span>
                         </p>
@@ -382,6 +433,8 @@
     </main>
 
     <script src="asset/jquery/jquery.min.js"></script>
+    <script src="asset/jquery-validate/jquery.validate.min.js"></script>
+    <script src="asset/jquery-validate/localization/messages_ar.min.js"></script>
     <script src="asset/jquery/circle-progress.min.js"></script>
     <script src="asset/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/index.js"></script>
