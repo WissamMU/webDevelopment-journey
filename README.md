@@ -10,4 +10,6 @@
 
 📝 YouTube-like user interface (done).
 
-📚 landing pages {coming soon ✔️, mobile ✔️, product ✔️, portfolio , agency ✔️} (in progress).
+📝 landing pages {coming soon ✔️, mobile ✔️, product ✔️, portfolio ✔️, agency ✔️} (done).
+
+📚 web store (in progress).
