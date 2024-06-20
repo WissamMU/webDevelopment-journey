@@ -14,15 +14,15 @@ module.exports = {
             {
                 test: /\.html$/i,
                 loader: "html-loader",
+                options: {
+                    minimize: true,
+                    sources : false,
+                },
             },
         ],
     },
     plugins: [new HtmlWebpackPlugin({
         filename: "index.html",
-        template: "./src/index.html"
-    }),
-    new HtmlWebpackPlugin({
-        filename: "product.html",
         template: "./src/index.html"
     })]
 };
