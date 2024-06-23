@@ -712,16 +712,6 @@ eval("Object.defineProperty(exports, \"__esModule\", ({value:true}));exports.fro
 
 /***/ }),
 
-/***/ "./node_modules/bootstrap/dist/css/bootstrap.min.css":
-/*!***********************************************************!*\
-  !*** ./node_modules/bootstrap/dist/css/bootstrap.min.css ***!
-  \***********************************************************/
-/***/ (() => {
-
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack://webstore/./node_modules/bootstrap/dist/css/bootstrap.min.css?");
-
-/***/ }),
-
 /***/ "./src/css/stylesheet.css":
 /*!********************************!*\
   !*** ./src/css/stylesheet.css ***!
@@ -729,6 +719,16 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack://webstor
 /***/ (() => {
 
 eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack://webstore/./src/css/stylesheet.css?");
+
+/***/ }),
+
+/***/ "./node_modules/bootstrap/dist/css/bootstrap.min.css":
+/*!***********************************************************!*\
+  !*** ./node_modules/bootstrap/dist/css/bootstrap.min.css ***!
+  \***********************************************************/
+/***/ (() => {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack://webstore/./node_modules/bootstrap/dist/css/bootstrap.min.css?");
 
 /***/ }),
 
@@ -991,7 +991,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var boot
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("4a5e1b86a62dd23942e7")
+/******/ 		__webpack_require__.h = () => ("cb909059239b98b1027f")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */

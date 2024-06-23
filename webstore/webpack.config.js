@@ -16,7 +16,7 @@ module.exports = {
         static: {
             directory: path.join(__dirname, 'public'),
         },
-        hot:false,
+        hot: false,
         port: 9000,
         open: true,
         devMiddleware: {
@@ -30,10 +30,10 @@ module.exports = {
                 loader: "html-loader",
                 options: {
                     minimize: true,
-                    sources: false,
                 },
             }, {
                 test: /\.css$/i,
+                exclude: /bootstrap\.min\.css$/i,
                 use: [
                     {
                         loader: MiniCssExtractPlugin.loader,
@@ -42,6 +42,31 @@ module.exports = {
                         },
                     }
                     , "css-loader"],
+            },
+            {
+                test: /bootstrap\.min\.css$/i,
+                use: [
+                    {
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {
+                            esModule: false,
+                        },
+                    }
+                    , "rtlcss-loader"],
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/resource',
+                generator: {
+                    filename: "./images/[name][ext]"
+                }
+            },
+            {
+                test: /\.(svg|eot|woff|woff2|ttf)$/i,
+                type: 'asset/resource',
+                generator: {
+                    filename: "./fonts/[name][ext]"
+                }
             },
         ],
     },
