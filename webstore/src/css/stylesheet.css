@@ -99,3 +99,16 @@ body {
     font-size: 14px;
     margin-right: 15px;
 }
+
+/* slide show */
+
+#carousel-featured{
+    background: #F7F8F3;
+    height: 400px;
+    padding: 25px 15px 0;
+}
+
+#carousel-featured .carousel-item img{
+    height: 375px;
+
+}
