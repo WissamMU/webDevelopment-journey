@@ -167,17 +167,19 @@ body {
     color: #b86d07 !important;
 }
 
-.sale{
+.sale {
     background: #53CCD7;
     color: white !important;
     position: absolute;
     font-weight: bold;
 }
-.sale.large{
+
+.sale.large {
     height: 60px;
     width: 60px;
     border-radius: 50%;
-    top: -15px;;
+    top: -15px;
+    ;
     left: -15px;
     padding: 35px;
     font-size: 130%;
@@ -188,7 +190,7 @@ body {
     transform: rotate(-25deg);
 }
 
-#carousel-featured .custom-carousel-indicators-primary{
+#carousel-featured .custom-carousel-indicators-primary {
     height: 75px !important;
     width: 75px !important;
     margin-left: 5px;
@@ -197,7 +199,8 @@ body {
     opacity: 1;
     transition: opacity .6s ease;
 }
-#carousel-featured .active.custom-carousel-indicators-primary{
+
+#carousel-featured .active.custom-carousel-indicators-primary {
     border: 2px solid #f8ad47;
 }
 
@@ -205,6 +208,7 @@ body {
     right: 41%;
     top: 235px;
 }
+
 #carousel-featured .carousel-control-prev .fa-chevron-right,
 #carousel-featured .carousel-control-next .fa-chevron-left {
     color: #868686;
