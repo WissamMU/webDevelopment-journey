@@ -1065,12 +1065,13 @@
                     <a href="contact.html">تواصل معنا</a>
                 </div>
                 <div class="newsletter col-md-6 offset-md-3 d-flex align-items-center justify-content-center">
-                    <form>
+                    <form class="needs-validation" novalidate>
                         <label for="footer-input">تابع النشرة البريدية لأحدث العروض</label>
                         <br>
                         <div class="input-group">
                             <input type="email" name="email" id="footer-input" class="form-control custom-form-control"
-                                placeholder="البريد الإلكتروني">
+                                placeholder="البريد الإلكتروني" required    >
+                                <div class="invalid-feedback">يرجى إدخال البريد الإلكتروني</div>
                             <button type="submit" class="btn custom-btn-warning">متابعة</button>
                         </div>
                     </form>
