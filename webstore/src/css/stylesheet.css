@@ -352,7 +352,7 @@ body {
 }
 
 .arrow-btn {
-    background-color: rgba(42, 40, 80, 0.97);
+    background-color: #fff;
     color: #868686;
     border: 1px solid #EBEBEB;
     border-radius: 2px;
@@ -501,6 +501,17 @@ input[type="email"] {
     #carousel-featured .carousel-indicators {
         margin-right: 4%;
     }
+    .overlay {
+        display: none;
+    }
+
+    .add-to-cart-btn {
+        color: #868686;
+        border-color: #868686;
+        margin-top: 8px;
+        font-weight: 400;
+    }
+
 }
 
 @media (max-width: 767.98px) {
@@ -541,13 +552,17 @@ input[type="email"] {
     #carousel-featured,
     #carousel-featured .product-details {
         height: auto;
-    }   
+    }
 
     #carousel-featured .carousel-item #custom-price {
         bottom: auto !important;
-        left: auto!important;
+        left: auto !important;
         right: 45%;
         top: -20px;
+    }
+    .custom-thumbnail img {
+        height: 250px !important;
+        margin: auto;
     }
 }
 
