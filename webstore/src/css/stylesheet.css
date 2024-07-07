@@ -512,6 +512,11 @@ input[type="email"] {
         font-weight: 400;
     }
 
+    #row-brands .carousel-inner img {
+        height: auto!important;
+        width: 200px!important;
+    }
+
 }
 
 @media (max-width: 767.98px) {
