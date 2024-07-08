@@ -501,6 +501,7 @@ input[type="email"] {
     #carousel-featured .carousel-indicators {
         margin-right: 4%;
     }
+
     .overlay {
         display: none;
     }
@@ -513,9 +514,27 @@ input[type="email"] {
     }
 
     #row-brands .carousel-inner img {
-        height: auto!important;
-        width: 200px!important;
+        height: auto !important;
+        width: 200px !important;
     }
+
+    #copyright,
+    #social-icons {
+        text-align: center;
+        width: 100%;
+    }
+
+    #social-icons {
+        font-size: 150%;
+        margin-top: 10px;
+    }
+
+    #footer-nav form {
+        max-width: 100%;
+        padding: 0 20px;
+        width: 100%;
+    }
+
 
 }
 
@@ -565,9 +584,25 @@ input[type="email"] {
         right: 45%;
         top: -20px;
     }
+
     .custom-thumbnail img {
         height: 250px !important;
         margin: auto;
+    }
+
+    #brand-logos img {
+        margin: 5px 24px 5px 23px;
+        max-height: 50px;
+        max-width: 50px;
+    }
+
+    #footer-nav .footer-logo {
+        margin-bottom: 30px;
+    }
+    #brand-logos img {
+        margin: 5px 24px 5px 23px;
+        max-height: 50px;
+        max-width: 50px;
     }
 }
 
