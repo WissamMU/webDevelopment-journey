@@ -460,6 +460,27 @@ input[type="email"] {
     color: rgb(0, 0, 0);
     border-color: rgb(248, 173, 71);
 }
+/* 
+ product page
+*/
+.custom-breadcrumb{
+    padding: 25px 0; 
+}
+.custom-breadcrumb a {
+    color: #555;
+    text-decoration: none;
+}
+.custom-breadcrumb a:hover {
+    color: #f8ad47;
+}
+.custom-breadcrumb>li::before{
+    color: #f8ad47;
+}
+.custom-breadcrumb .active{
+    color: #bfbfbf;
+}
+
+
 
 
 
