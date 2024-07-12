@@ -64,7 +64,7 @@
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item ">
-                                <a href="./index.html" class="nav-link" >الصفحة الرئيسية </a>
+                                <a href="./index.html" class="nav-link">الصفحة الرئيسية </a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown2" role="button"
@@ -108,10 +108,146 @@
                         <a href="#">ملابس رجالي</a>
                     </li>
                     <li class="breadcrumb-item">
-                        قميص 
+                        قميص
                     </li>
                 </ol>
             </div>
         </div>
+
+        <!-- Photos and description -->
+        <div class="container borders-between">
+            <div class="row mb-5">
+                <div class="col-lg-5 col-md-9 offset-md-2 offset-lg-1 product-images">
+                    <div id="carousel-product-images" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/product_1.jpg" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/product_2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="carousel-indicators custom-carousel-indicators">
+                            <img src="./images/product_1.jpg" alt="" class="custom-carousel-indicators-primary active"
+                                data-bs-target="#carousel-product-images" data-bs-slide-to="0">
+                            <img src="./images/product_2.jpg" alt="" class="custom-carousel-indicators-primary"
+                                data-bs-target="#carousel-product-images" data-bs-slide-to="1">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <form action="" id="form-product-selection" class="borders-between">
+                        <div class="row">
+                            <div class="product-category">
+                                ملابس رجاليّ
+                            </div>
+                            <div class="clearfix">
+                                <h2 class="float-start">قميص تك فت بيز</h2>
+                                <div class="float-end price large">
+                                    35$
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p class="product-description">
+                                حقق أقصى أداء أثناء تمارينك الرياضية مع قميص تك فت بيز الرياضي الذي يمنحك الراحة
+                                ويدعم عضلاتك.
+                            </p>
+                        </div>
+                        <div class="row brand-and-rating">
+                            <div class="col-6">
+                                <div class="brand">
+                                    الماركة:
+                                    <img src="./images/adidas_small.png" alt="adidas">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="rating">
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row size-and-color">
+                            <div class="col-md-6">
+                                المقاسات المتاحة:
+                                <br>
+                                <div class="product-option size-option">
+                                    <label>
+                                        S
+                                        <input type="radio" name="size" value="sm">
+                                    </label>
+                                </div>
+                                <div class="product-option size-option active">
+                                    <label>
+                                        M
+                                        <input type="radio" name="size" value="m" checked>
+                                    </label>
+                                </div>
+                                <div class="product-option size-option">
+                                    <label>
+                                        L
+                                        <input type="radio" name="size" value="l">
+                                    </label>
+                                </div>
+                                <div class="product-option size-option">
+                                    <label>
+                                        XL
+                                        <input type="radio" name="size" value="xl">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                الألوان المتاحة:
+                                <br>
+                                <div class="product-option color-option" style="background-color: #FFAF32;">
+                                    <label>&nbsp;
+                                        <input type="radio" name="color" value="orange">
+                                    </label>
+                                </div>
+                                <div class="product-option color-option" style="background-color: #FF322C;">
+                                    <label>&nbsp;
+                                        <input type="radio" name="color" value="red">
+                                    </label>
+                                </div>
+                                <div class="product-option color-option" style="background-color: #AC38B6;">
+                                    <label>&nbsp;
+                                        <input type="radio" name="color" value="purple">
+                                    </label>
+                                </div>
+                                <div class="product-option color-option active" style="background-color: #00C1CE;">
+                                    <label>&nbsp;
+                                        <input type="radio" name="color" value="blue" checked>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-quantity">
+                            <div>
+                                العدد المطلوب:
+                                <select name="quantity" class="custom-form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <button type="submit" class="btn custom-btn-warning custom-btn-with-icon">
+                                <span>
+                                    إضافة لعربة الشراء
+                                    <i class="fas fa-cart-plus"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
     </div>
 </body>

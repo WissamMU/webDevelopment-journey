@@ -480,6 +480,82 @@ input[type="email"] {
     color: #bfbfbf;
 }
 
+/* proudct page Photos and description  */
+#carousel-product-images .carousel-indicators {
+    position: absolute;
+    top: 92%;
+    right: 0;
+}
+#carousel-product-images .carousel-item img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #EBEBEB;
+}
+.custom-carousel-indicators-primary {
+    border: 2px solid #dddddb!important;
+    height: 70px!important;
+    margin: 0 0 0 5px!important;
+    opacity: 1!important;
+    width: 70px!important;
+}
+
+.product-category {
+    color: #A9A9A9;
+}
+
+#form-product-selection h2 {
+    font-weight: 700;
+    margin: 18px 0;
+}
+
+.price.large {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.borders-between>div+div {
+    border-top: 1px solid #EBEBEB;
+    padding: 15px 0;
+}
+
+.product-option {
+    display: inline-block;
+    height: 23px;
+    width: 23px;
+    border: 1px solid #EBEBEB;
+    text-align: center;
+    justify-content: center;
+    color: #C2C2C2;
+    margin: 3px;
+    font-weight: 700;
+}
+
+.product-option input {
+    display: none;
+}
+
+.product-option.active {
+    color: #F8AD47;
+    border-color: #F8AD47;
+}
+
+.color-option.active {
+    border-color: #fff;
+    outline: #000 solid 1px;
+}
+
+.product-quantity select {
+    height: 34px !important;
+    padding: 6px 12px;
+    margin-right: 5px;
+}
+
+.custom-btn-with-icon {
+    margin: 15px 0;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
 
 
 
