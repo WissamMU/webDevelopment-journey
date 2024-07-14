@@ -10,7 +10,7 @@ document.querySelectorAll('.add-to-cart-btn').forEach(item => {
     item.addEventListener("click", () => {
         alert("أضيف المُنتج إلى عربة الشراء")
     })
-})
+});
 
 
 
@@ -33,25 +33,49 @@ document.querySelectorAll('.color-option input[type="radio"]').forEach(item => {
     })
 })
 
+document.querySelectorAll('[data-product-quantity]').forEach(item => {
+    item.addEventListener('change', () => {
+        const newQuantity = item.value;
+        const parent = item.closest('[data-product-info]');
+        const pricePerUnit = parent.getAttribute('data-product-price');
+        const totalPriceForProduct = newQuantity * pricePerUnit
+        parent.querySelector('.total-price-for-product').innerHTML = totalPriceForProduct + "$";
 
-(() => {
-    'use strict'
-    
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    const forms = document.querySelectorAll('.needs-validation')
-    
-    // Loop over them and prevent submission
-    Array.from(forms).forEach(form => {
-        form.addEventListener('submit', event => {
-            if (!form.checkValidity()) {
-                event.preventDefault()
-                event.stopPropagation()
-            }
-            
-            form.classList.add('was-validated')
-        }, false)
+        calculateTotalPrice()
     })
+})
 
-})();
+function calculateTotalPrice() {
+    let totalPriceForAllProduct = 0;
+    document.querySelectorAll('[data-product-info]').forEach(product => {
+        const pricePerUnite = product.getAttribute('data-product-price');
+        const quantity = product.querySelector('[data-product-quantity]').value
+        const totalPriceForProduct = pricePerUnite * quantity
 
-document.getElementById("copyright").innerHTML = "جميع الحقوق محفوظة للمتجر سنة " + new Date().getFullYear();
+        totalPriceForAllProduct = totalPriceForAllProduct + totalPriceForProduct;
+    })
+    document.getElementById('total-price-for-all-product').innerHTML = totalPriceForAllProduct + '$'
+}
+
+
+// (() => {
+//     'use strict'
+    
+//     // Fetch all the forms we want to apply custom Bootstrap validation styles to
+//     const forms = document.querySelectorAll('.needs-validation')
+    
+//     // Loop over them and prevent submission
+//     Array.from(forms).forEach(form => {
+//         form.addEventListener('submit', event => {
+//             if (!form.checkValidity()) {
+//                 event.preventDefault()
+//                 event.stopPropagation()
+//             }
+            
+//             form.classList.add('was-validated')
+//         }, false)
+//     })
+
+// })();
+
+// document.getElementById("copyright").innerHTML = "جميع الحقوق محفوظة للمتجر سنة " + new Date().getFullYear();
