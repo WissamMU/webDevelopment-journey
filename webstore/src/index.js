@@ -42,8 +42,15 @@ document.querySelectorAll('[data-product-quantity]').forEach(item => {
         parent.querySelector('.total-price-for-product').innerHTML = totalPriceForProduct + "$";
 
         calculateTotalPrice()
-    })
-})
+    });
+});
+
+document.querySelectorAll('[data-remove-from-card]').forEach(item =>{
+    item.addEventListener('click',() => {
+        item.closest('[data-product-info]').remove();
+        calculateTotalPrice()
+    });
+});
 
 function calculateTotalPrice() {
     let totalPriceForAllProduct = 0;
