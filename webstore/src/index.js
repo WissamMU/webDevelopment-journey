@@ -45,8 +45,8 @@ document.querySelectorAll('[data-product-quantity]').forEach(item => {
     });
 });
 
-document.querySelectorAll('[data-remove-from-card]').forEach(item =>{
-    item.addEventListener('click',() => {
+document.querySelectorAll('[data-remove-from-card]').forEach(item => {
+    item.addEventListener('click', () => {
         item.closest('[data-product-info]').remove();
         calculateTotalPrice()
     });
@@ -63,26 +63,79 @@ function calculateTotalPrice() {
     })
     document.getElementById('total-price-for-all-product').innerHTML = totalPriceForAllProduct + '$'
 }
+// country selection
 
+const citiesByCountry = {
+    sa: ['جدة', 'الرياض'],
+    eg: ['القاهرة', 'الإسكندرية'],
+    jo: ['عمان', 'الزرقاء'],
+    sy: ['دمشق', 'حلب', 'حماه']
+}
 
-// (() => {
-//     'use strict'
-    
-//     // Fetch all the forms we want to apply custom Bootstrap validation styles to
-//     const forms = document.querySelectorAll('.needs-validation')
-    
-//     // Loop over them and prevent submission
-//     Array.from(forms).forEach(form => {
-//         form.addEventListener('submit', event => {
-//             if (!form.checkValidity()) {
-//                 event.preventDefault()
-//                 event.stopPropagation()
-//             }
-            
-//             form.classList.add('was-validated')
-//         }, false)
-//     })
+document.querySelectorAll('select[name="country"]').forEach(item => {
+    item.addEventListener('change', () => {
+        const country = item.value
 
-// })();
+        const cities = citiesByCountry[country]
 
-// document.getElementById("copyright").innerHTML = "جميع الحقوق محفوظة للمتجر سنة " + new Date().getFullYear();
+        document.querySelectorAll('#paymentcities option').forEach(option => option.remove())
+
+        const firstOption = document.createElement('option')
+        const optionText = document.createTextNode('اختر المدينة')
+        firstOption.appendChild(optionText)
+        firstOption.setAttribute('value', '')
+        firstOption.setAttribute('disabled', 'true')
+        firstOption.setAttribute('selected', 'true')
+
+        const city_options = document.getElementById('paymentcities')
+        city_options.appendChild(firstOption)
+
+        cities.forEach(city => {
+            const newOption = document.createElement('option')
+            const optionText = document.createTextNode(city)
+            newOption.appendChild(optionText)
+            newOption.setAttribute('value', city)
+            city_options.appendChild(newOption)
+        })
+    })
+})
+// show and hide payment options
+document.querySelectorAll('#form-checkout input[name="payment-method"]').forEach(item => {
+    item.addEventListener('change', () => {
+        const paymentMethod = item.value;
+
+        const creditCardInputs = document.querySelectorAll('#credit_card_info input');
+
+        if(paymentMethod === 'on_delivery') {
+            creditCardInputs.forEach(input => {
+                input.style.display='none'
+            })
+        } else {
+            creditCardInputs.forEach(input => {
+                input.style.display='block'
+            })
+        }
+    })
+})
+
+// email required
+    (() => {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+        })
+    })()
+
+document.getElementById("copyright").innerHTML = "جميع الحقوق محفوظة للمتجر سنة " + new Date().getFullYear();
