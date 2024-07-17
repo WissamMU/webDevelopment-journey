@@ -591,9 +591,7 @@ input[type="email"] {
     margin-bottom: 5px;
 }
 
-/*
-Checkout
-*/
+/* Checkout */
 
 h1.custom-heading{
     font-size: 36px ;
@@ -651,9 +649,7 @@ h1.custom-heading{
     color: #b9001b;
 }
 
-/*
---------- Payment Page ---------
-*/
+/* Payment Page */
 
 .custom-input-details {
     border-width: 2px;
@@ -663,6 +659,85 @@ h1.custom-heading{
     font-size: 18px;
     width: 98%;
 }
+/* Search page */
+
+#form-advanced-search {
+    border: 1px solid #EBEBEB;
+    padding-bottom: 20px;
+    margin-bottom: 35px;
+    height: fit-content;
+}
+
+#form-advanced-search .panel {
+    border: none;
+    padding: 5px;
+}
+
+
+.panel .card-header {
+    background-color: transparent;
+    margin-bottom: 15px;
+    padding-bottom: 13px;
+}
+
+.custom-list-group .list-group-item {
+    border: none;
+}
+
+.custom-list-group {
+    border-bottom: 1px solid #EBEBEB;
+}
+
+#form-advanced-search label {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.custom-pagination .page-link {
+    margin-left: 3px !important;
+    margin-right: 3px !important;
+    border: 1px solid #EBEBEB !important;
+    width: 32px !important;
+    height: 32px !important;
+    color: #C2C2C2 !important;
+    text-decoration: none !important;
+    outline: none !important;
+    transition: all 0.3s ease !important;
+}
+
+.custom-pagination .page-item.active .page-link {
+    background-color: #F8AD47 !important;
+    color: #fff !important;
+    border-color: #F8AD47 !important;
+}
+
+.custom-pagination .page-link:active,
+.custom-pagination .page-link:focus,
+.custom-pagination .page-link:hover {
+    color: #F8AD47 !important;
+    background-color: #fff !important;
+    border-color: #F8AD47 !important;
+}
+
+/* contact us */
+
+#map {
+    padding: 0;
+}
+
+#contact-options h4 {
+    font-size: 18px;
+}
+
+#contact-info .fa-lg {
+    color: #f3af41;
+    margin: 10px 0px 0px 10px;
+}
+
+#contact-options textarea {
+    height: 105px !important;
+}
+
 
 
 @media (max-width: 1199.98px) {
