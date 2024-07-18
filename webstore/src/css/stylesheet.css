@@ -721,20 +721,20 @@ h1.custom-heading{
 
 /* contact us */
 
-#map {
+.map {
     padding: 0;
 }
 
-#contact-options h4 {
+.contact-options h1 {
     font-size: 18px;
 }
 
-#contact-info .fa-lg {
+.contact-info .fa-lg {
     color: #f3af41;
     margin: 10px 0px 0px 10px;
 }
 
-#contact-options textarea {
+.contact-options textarea {
     height: 105px !important;
 }
 
