@@ -248,22 +248,7 @@ body {
     margin-bottom: 25px;
 }
 
-.custom-thumbnail {
-    border: 2px solid #eef0ea;
-    cursor: pointer;
-    margin-bottom: 50px;
-    padding: 8px;
-}
 
-.custom-thumbnail img {
-    max-height: 250px;
-    max-width: 250px;
-    width: 100%;
-}
-
-.custom-thumbnail h4 {
-    font-size: 18px;
-}
 
 .price {
     color: #53CCD7;
@@ -455,11 +440,7 @@ input[type="email"] {
     box-shadow: none !important;
 }
 
-.custom-btn-warning {
-    background-color: rgb(248, 173, 71);
-    color: rgb(0, 0, 0);
-    border-color: rgb(248, 173, 71);
-}
+
 
 /* 
  product page
@@ -874,11 +855,6 @@ h1.custom-heading{
         left: auto !important;
         right: 45%;
         top: -20px;
-    }
-
-    .custom-thumbnail img {
-        height: 250px !important;
-        margin: auto;
     }
 
     #brand-logos img {
