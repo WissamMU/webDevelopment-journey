@@ -12,4 +12,4 @@
 
 📝 landing pages {coming soon ✔️, mobile ✔️, product ✔️, portfolio ✔️, agency ✔️} (done).
 
-📚 web store (in progress).
+📚 web store (done) https://github.com/WissamMU/company/tree/main.
