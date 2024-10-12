@@ -1,5 +1,7 @@
 👋 Hello this file is just for me while learning Frontend.
 
+👨‍💼 check my personal page https://wissammu.github.io/
+
 📓 You can find my projects on the file.
 
 ✍️ I give my learning process chapters.
@@ -14,6 +16,8 @@
 
 📝 web store (done) https://github.com/WissamMU/company/tree/main.
 
-📝 control panel "this project I focused on Making the whole website without libraries Pure CSS or SASS in this case" (done)
-https://wissammu.github.io/controlPanel/
-https://github.com/WissamMU/controlPanel
+📝 control panel (done) https://github.com/WissamMU/controlPanel
+
+📝 hugo static pages (done) https://github.com/WissamMU/hugo-website
+
+📝 news page (done) https://github.com/WissamMU/news-page-scss-bootstrap
